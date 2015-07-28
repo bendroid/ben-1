@@ -5,10 +5,6 @@
   width: 50px;
 }
 
-.btn-social>i {
-  font-size: 22px;
-  margin-top: -16px;
-}
 
 /****** DESKTOP NAVBAR SOCIAL ICONS ******/
 li .btn-social {
@@ -16,7 +12,7 @@ li .btn-social {
 }
 
 li .btn-social>i {
-  font-size: 22px;
+  font-size: 25px;
   margin-top: -22px;
 }
 

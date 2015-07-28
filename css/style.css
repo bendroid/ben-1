@@ -25,9 +25,10 @@ p {
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+
+.parallax-container .section {
+  width: 100%;
+}
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
@@ -44,7 +45,6 @@ p {
     top: 0;
   }
 }
-
 
 .icon-block {
   padding: 0 15px;
@@ -74,6 +74,27 @@ ul.card-link li {
 }
 
 .side-avatar {
+  height: 64px;
+  width: 64px;
+}
+
+.side-nav li{
+  background-color: #29b6f6;
+}
+
+.side-nav a {
+  color: #fff;
+}
+
+.side-nav a:hover {
+  color: #29b6f6;
+}
+
+.collapsible-header {
+  height: 6rem;
+}
+
+.coll-img {
   height: 64px;
   width: 64px;
 }
