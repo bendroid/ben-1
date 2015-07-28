@@ -68,3 +68,11 @@ ul.social li {
 .card .card-action a {
   color: #29b6f6;
 }
+
+ul.card-link li {
+  display: inline;
+}
+
+.parallax-container {
+      height: 350px;
+    }
