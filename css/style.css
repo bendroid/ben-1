@@ -73,6 +73,7 @@ ul.card-link li {
   display: inline;
 }
 
-.parallax-container {
-      height: 350px;
-    }
+.side-avatar {
+  height: 64px;
+  width: 64px;
+}
