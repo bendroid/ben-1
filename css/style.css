@@ -98,3 +98,11 @@ ul.card-link li {
   height: 64px;
   width: 64px;
 }
+
+.collapsible-header {
+  padding: 1.5rem 1rem;
+}
+
+.container-fluid.card.cyan.z-depth-2.waves-effect {
+  margin-top: 0;
+}
