@@ -212,7 +212,7 @@
 <div class="section no-pad-bot">
   <div class="container">
     <div class="row">
-      <div class="col s12 m4">
+      <div class="col s12 m4 white-text">
         <div class="card hoverable blue-grey darken-1">
           <div class="card-image">
             <img src="http://placehold.it/350x350">
@@ -388,48 +388,71 @@
       <li>
         <div class="collapsible-header"><i class="material-icons">filter_drama</i><h5>Project 1</h5></div>
         <div class="collapsible-body">
-		<div class="container">
-		 <div class="row">
-      <div class="col s12 m6 offset-m3">
-        <div class="card hoverable blue-grey darken-1">
-          <div class="card-image">
-            <img src="http://placehold.it/350x350">
-            <span class="card-title">Project 1</span>
-          </div>
-          <div class="card-content">
-            <p>This is the design you are looking at right now! Built with the help of the Bootstrap framework and Font Awesome. Check out my Github repo below. Thanks for checking it out!</p>
-          </div>
-          <div class="card-action">
-            <ul class="social-network social-circle social-card">
-              <li><a href="https://github.com/bendroid/" target="_blank" class="z-depth-2 icoGithub" title="Github"><i class="fa fa-github"></i></a></li>
-            </ul>
-          </div>
+            <div class="row row-margin-bottom">
+            <div class="col m5 no-padding lib-item" data-category="view">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col m6">
+                            <img class="lib-img-show" src="http://lorempixel.com/850/850/?random=123">
+                        </div>
+                        <div class="col m6">
+                            <div class="lib-row lib-header">
+                                Example library
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                                Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col m1"></div>
+            <div class="col m5 no-padding lib-item" data-category="ui">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col m6">
+                            <img class="lib-img" src="http://lorempixel.com/850/850/?random=456">
+                        </div>
+                        <div class="col m6">
+                            <div class="lib-row lib-header">
+                                Example library
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                                Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      
-    </div><!-- row -->
-    </div><!-- container -->
+        </div>
+
       </li>
       <li>
         <div class="collapsible-header"><i class="material-icons">filter_drama</i><h5>Project 2</h5></div>
         <div class="collapsible-body">
 		<div class="row">
-        <div class="col s12 m7">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/ben-sm.jpg">
-              <span class="card-title">Card Title</span>
+<div class="col s12 lib-item hoverable" data-category="view">
+                <div class="lib-panel">
+                    <div class="row">
+                        <div class="col s6">
+                            <img class="lib-img-show" src="http://lorempixel.com/850/850/?random=123">
+                        </div>
+                        <div class="col s6">
+                            <div class="lib-row lib-header">
+                                Example library
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                                Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                            </div>
+                        </div>
+                    </div><!-- ./row -->
+                </div>
             </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      </div><!-- ./row -->
 	  </div>
       </li>
       <li>
@@ -532,7 +555,29 @@
 </div>
 </div>
 
-
+<div class="container">
+    <hr>
+	<div class="row row-margin-bottom">
+	<div class="col s12 no-padding lib-item hoverable" data-category="view">
+                <div class="lib-panel">
+                    <div class="row">
+                        <div class="col s6">
+                            <img class="lib-img-show" src="http://lorempixel.com/850/850/?random=123">
+                        </div>
+                        <div class="col s6">
+                            <div class="lib-row lib-header">
+                                Example library
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                                Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+	</div><!-- ./row -->
+</div>
 
 <!-- =========== SAMPLE CARDS ================= -->
 <div class="section no-pad-bot">
@@ -548,9 +593,41 @@
             <a href="#">This is a link</a>
             <a href="#">This is a link</a>
           </div>
-        </div>
-      </div>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
+	  <div class="col s12 m6">
+        <div class="card hoverable blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Card Title</span>
+            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+            <a href="#">This is a link</a>
+          </div>
+        </div><!-- ./card -->
+      </div><!-- ./col -->
     </div><!-- ./row -->
+	<div class="row">
+	<div class="col s12 no-padding lib-item hoverable" data-category="view">
+                <div class="lib-panel">
+                    <div class="row">
+                        <div class="col s6">
+                            <img class="lib-img-show" src="http://lorempixel.com/850/850/?random=123">
+                        </div>
+                        <div class="col s6">
+                            <div class="lib-row lib-header">
+                                Example library
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                                Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+	</div><!-- ./row -->
     <div class="row">
       <div class="col s12 m7">
         <div class="card hoverable">
