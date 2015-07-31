@@ -29,10 +29,7 @@
     });
 
     var options = [
-    {selector: '#projects', offset: 50, callback: 'Materialize.toast("This is our ScrollFire Demo!", 1500 )' },
-    {selector: '#projects', offset: 205, callback: 'Materialize.toast("Please continue scrolling!", 1500 )' },
-    {selector: '#projects', offset: 400, callback: 'Materialize.showStaggeredList("#project-list")' },
-    {selector: '#image-test', offset: 500, callback: 'Materialize.fadeInImage("#image-test")' }
+    {selector: '#project-list', offset: 400, callback: 'Materialize.showStaggeredList("#project-list")' },
   ];
   Materialize.scrollFire(options);
 

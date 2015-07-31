@@ -1,0 +1,167 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #fff;
+}
+
+.side-nav li {
+  padding: 0;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #fff;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: 480px;
+  color: rgba(255,255,255,.9);
+}
+
+.parallax-container .section {
+  width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+/*********** CUSTOMIZED *********************/
+
+.dropdown-content li>a,
+.dropdown-content li>span {
+  color: #29b6f6;
+}
+
+ul.social li {
+  display: inline;
+}
+
+.card .card-action a {
+  color: #29b6f6;
+}
+
+ul.card-link li {
+  display: inline;
+}
+
+.side-avatar {
+  height: 64px;
+  width: 64px;
+}
+
+.side-nav li{
+  background-color: #29b6f6;
+}
+
+.side-nav a {
+  color: #fff;
+}
+
+.side-nav a:hover {
+  color: #29b6f6;
+}
+
+.collapsible-header {
+  height: 6rem;
+}
+
+.coll-img {
+  height: 64px;
+  width: 64px;
+}
+
+.collapsible-header {
+  padding: 1.5rem 1rem;
+}
+
+.container-fluid.card.cyan.z-depth-2.waves-effect {
+  margin-top: 0;
+}
+
+.lib-panel {
+    margin-bottom: 20px;
+}
+.lib-panel img {
+    width: 100%;
+    background-color: transparent;
+}
+
+.lib-panel .row,
+.lib-panel .col-md-6 {
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+
+.lib-panel .lib-row {
+    padding: 0 20px 0 20px;
+}
+
+.lib-panel .lib-row.lib-header {
+    background-color: #FFFFFF;
+    font-size: 20px;
+    padding: 10px 20px 0 20px;
+}
+
+.lib-panel .lib-row.lib-header .lib-header-seperator {
+    height: 2px;
+    width: 26px;
+    background-color: #d9d9d9;
+    margin: 7px 0 7px 0;
+}
+
+.lib-panel .lib-row.lib-desc {
+    position: relative;
+    height: 100%;
+    display: block;
+    font-size: 13px;
+}
+.lib-panel .lib-row.lib-desc a{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 20px;
+}
+
+.row-margin-bottom {
+    margin-bottom: 20px;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
+}
+

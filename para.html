@@ -9,7 +9,7 @@
   <!-- CSS  -->
   <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/para.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/social.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/spin.css" type="text/css" rel="stylesheet" >
@@ -17,7 +17,61 @@
 </head>
 <body>
 <!-- ======== NAVBAR ======= -->
-<!-- DROPDOWN -->
+<div class="navbar-fixed">
+<nav class="blue">
+  <div class="nav-wrapper container">
+    <a id="logo-container" href="#" class="brand-logo">Ben Collins</a>
+    <ul id="slide-out" class="side-nav">
+    <li><a href="#!">First Sidebar Link</a></li>
+    <li><a href="#!">Second Sidebar Link</a></li>
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <a class="collapsible-header">Projects<i class="mdi-navigation-arrow-drop-down"></i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="#!">Project 1</a></li>
+              <li><a href="#!">Project 2</a></li>
+              <li><a href="#!">Project 3</a></li>
+              <li><a href="#!">Project 4</a></li>
+              <li><a href="#!">Project 5</a></li>
+              <li><a href="#!">Project 6</a></li>
+              <li><a href="#!">Project 7</a></li>
+              <li class="divider"></li>
+              <li><a href="#!">Divided</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul class="right hide-on-med-and-down">
+    <li><a href="#!">First Sidebar Link</a></li>
+    <li><a href="#!">Second Sidebar Link</a></li>
+    <li><a class="dropdown-button" href="#!" data-activates="dropdownProjects">Projects<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+    <ul id='dropdownProjects' class='dropdown-content'>
+              <li><a href="#!">Project 1</a></li>
+              <li><a href="#!">Project 2</a></li>
+              <li><a href="#!">Project 3</a></li>
+              <li><a href="#!">Project 4</a></li>
+              <li><a href="#!">Project 5</a></li>
+              <li><a href="#!">Project 6</a></li>
+              <li><a href="#!">Project 7</a></li>
+              <li class="divider"></li>
+              <li><a href="#!">Divided</a></li>
+    </ul>
+	  <ul class="right hide-on-med-and-down">
+        <li><a href="https://github.com/bendroid/" target="_blank" class="btn btn-social btn-github"><i class="fa fa-github"></i></a></li>
+        <li><a href="https://twitter.com/jaemood/" target="_blank" class="btn btn-social btn-twitter"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://plus.google.com/110080867018847121215/" target="_blank" class="btn btn-social btn-google-plus"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="https://www.linkedin.com/pub/ben-collins/15/663/b43" target="_blank" class="btn btn-social btn-linkedin"><i class="fa fa-linkedin"></i></a></li>
+  </ul>
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+</nav>
+</div>
+<!-- DROPDOWN --
 <ul id="dropdownProjects" class="dropdown-content">
   <li><a href="#projects">Projects</a></li>
   <li><a href="#!">Project 1</a></li>
@@ -44,7 +98,7 @@
         <li><a href="https://plus.google.com/110080867018847121215/" target="_blank" class="btn btn-social btn-google-plus"><i class="fa fa-google-plus"></i></a></li>
         <li><a href="https://www.linkedin.com/pub/ben-collins/15/663/b43" target="_blank" class="btn btn-social btn-linkedin"><i class="fa fa-linkedin"></i></a></li>
       </ul>
-<!-- ========= MOBILE NAVBAR ========== -->
+<!-- ========= MOBILE NAVBAR ========== --
       <ul id="nav-mobile" class="side-nav">
         <li><a href="#!">Project 1</a></li>
         <li><a href="#!">Project 2</a></li>
@@ -59,7 +113,7 @@
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
     </div>
   </nav>
-</div>
+</div>-->
 
 
 <!-- ========= CONTENT ============ -->
@@ -100,7 +154,7 @@
           <div class="card hoverable">
             <div class="card-image">
               <img src="img/ben-sm.jpg">
-              <span class="card-title">Project 1</span>
+              <span class="card-title">Project 2</span>
             </div>
             <div class="card-content">
               <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
@@ -116,7 +170,7 @@
         <div class="card hoverable">
           <div class="card-image">
             <img src="img/ben-sm.jpg">
-            <span class="card-title">Project 1</span>
+            <span class="card-title">Project 3</span>
           </div>
           <div class="card-content">
             <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
@@ -134,7 +188,7 @@
           <div class="card hoverable">
             <div class="card-image">
               <img src="img/ben-sm.jpg">
-              <span class="card-title">Project 1</span>
+              <span class="card-title">Project 4</span>
             </div>
             <div class="card-content">
               <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
@@ -150,7 +204,7 @@
           <div class="card hoverable">
             <div class="card-image">
               <img src="img/ben-sm.jpg">
-              <span class="card-title">Project 1</span>
+              <span class="card-title">Project 5</span>
             </div>
             <div class="card-content">
               <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
@@ -166,7 +220,7 @@
         <div class="card hoverable">
           <div class="card-image">
             <img src="img/ben-sm.jpg">
-            <span class="card-title">Project 1</span>
+            <span class="card-title">Project 6</span>
           </div>
           <div class="card-content">
             <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
