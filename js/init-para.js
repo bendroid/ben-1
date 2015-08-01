@@ -1,8 +1,11 @@
 (function($){
   $(function(){
 
+    // Initialize collapse button
     $('.button-collapse').sideNav();
 
+    // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+    $('.collapsible').collapsible();
 
     var $container = $('#masonry-grid');
     // initialize
@@ -27,9 +30,25 @@
     $(document).ready(function(){
       $('.parallax').parallax();
     });
+	
+	  $('.scrollspy').scrollSpy();
+
+$(document).ready(function(){
+    $('.toc-wrapper .row').pushpin({ top: $('.toc-wrapper').offset().top });
+  });
 
 
-
-
+ // Floating-Fixed table of contents
+    if ($('nav').length) {
+      $('.toc-wrapper').pushpin({ top: $('nav').height() });
+    }
+    else if ($('#index-banner').length) {
+      $('.toc-wrapper').pushpin({ top: $('#index-banner').height() });
+    }
+    else {
+      $('.toc-wrapper').pushpin({ top: 0 });
+    }
+  
+  
   }); // end of document ready
 })(jQuery); // end of jQuery name space

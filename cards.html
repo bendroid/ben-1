@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <link rel="icon" href="favicons/favicon.ico">
+  <title>PARA</title>
+
+  <!-- CSS  -->
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/cards.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/social.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/spin.css" type="text/css" rel="stylesheet" >
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<div ng-controller="mainCtrl">
+    <div class="row">
+        <div class="s10 offset-s1 col">
+            <h3>Collapsible Accordion List</h3>
+            <h5>MaterializeCSS + AngularJS</h5>
+
+            <ul class="collapsible collapsible-accordion" data-collapsible="accordion">
+                <li ng-repeat="u in users">
+                    <div class="collapsible-header blue white-text"  ng-class="($index==1) ? 'active' : ''">
+                        {{u.user.username}}
+                    </div>
+                    <div class="collapsible-body blue lighten-3">
+                        <div class="m12 col">
+                            <div class="card">
+                                <div class="card-content row">
+                                    <div class="s12 l3 col">
+                                        <img src="{{u.user.picture.medium}}" class="align-right circle">
+                                    </div>
+                                    <div class="s12 l9 col">
+                                        <h4>{{u.user.name.first}}</h4>
+                                        <label>Email</label> {{u.user.email}} <br>
+                                        <label>Password</label> {{u.user.password}} <br>
+                                        <label>Phone</label> {{u.user.phone}} <br>
+                                        <label>Location</label> {{u.user.location.city}}, {{u.user.location.state}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<!-- =========== SCRIPTS =========== -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<!--<script src="js/masonry.pkgd.min.js"></script>-->
+<script src="js/cards.js"></script>
+
+  </body>
+</html>

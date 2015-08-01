@@ -14,9 +14,52 @@ nav .brand-logo {
 .nav-logo {
   height: 48px;
   width: 48px;
-  margin: 5px 0 5px;
+  margin: 5px 15px 0;
   border: 2px solid #fff !important;
   box-shadow: 0 3px 7px 0 #4f4a65;
+  padding: 0;
+}
+
+.card .card-title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    background-color: rgba(25, 137, 212, 0.88);
+}
+
+.cover-box {
+  background-color: rgba(25, 137, 212, 0.88);
+}
+
+.table-of-contents {
+	padding-left: 50px;
+	top: 550px;
+}
+
+.project {
+  padding-top: 50px;
+}
+
+.table-of-contents a {
+    display: inline-block;
+    font-weight: 300;
+    color: #757575;
+    padding-left: 20px;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: .4;
+}
+
+.table-of-contents a:hover {
+    font-weight: 500;
+    padding-left: 18px;
+    border-left: 2px solid #2196f3;
+}
+
+.table-of-contents a.active {
+    font-weight: 500;
+    padding-left: 18px;
+    border-left: 2px solid #2196f3;
 }
 
 .side-nav li {
