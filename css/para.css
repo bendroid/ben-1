@@ -11,6 +11,12 @@ nav .brand-logo {
   color: #fff;
 }
 
+.nav-logo {
+  height: 48px;
+  width: 48px;
+  margin: 5px 0 5px;
+}
+
 .side-nav li {
   padding: 0;
 }

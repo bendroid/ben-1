@@ -28,10 +28,7 @@
       $('.parallax').parallax();
     });
 
-    var options = [
-    {selector: '#project-list', offset: 400, callback: 'Materialize.showStaggeredList("#project-list")' },
-  ];
-  Materialize.scrollFire(options);
+
 
 
   }); // end of document ready
