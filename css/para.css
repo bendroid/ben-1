@@ -16,6 +16,7 @@ nav .brand-logo {
   width: 48px;
   margin: 5px 0 5px;
   border: 2px solid #fff !important;
+  box-shadow: 0 3px 7px 0 #4f4a65;
 }
 
 .side-nav li {
