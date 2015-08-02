@@ -55,7 +55,7 @@ body {
     overflow: hidden
 }
 blockquote {
-    border-color: #d3d3d3;
+    border-color: #2196F3;
     margin: 0;
     box-sizing: border-box;
     display: -ms-flexbox;
@@ -82,7 +82,8 @@ blockquote .b-text {
     -mox-box-flex: 1 0 auto;
     -ms-flex: 1 0 auto;
     -webkit-flex: 1 0 auto;
-    flex: 1 0 auto
+    flex: 1 0 auto;
+	align-itmes: left;
 }
 .io-background {
     background-image: url(./images/bg-2.jpg);
@@ -319,6 +320,7 @@ blockquote .b-text {
 		visibility: inherit;
 		opacity: 1;
 		transform: matrix(1, 0, 0, 1, 0, 0);
+		color: #fff;
     }
     .io-navigation {
         box-sizing: border-box;

@@ -74,6 +74,11 @@ ul.card-link li {
 }
 
 .side-avatar {
+  height: 48px;
+  width: 48px;
+}
+
+.side-logo {
   height: 64px;
   width: 64px;
 }
