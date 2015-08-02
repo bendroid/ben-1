@@ -1,0 +1,1188 @@
+
+
+<!--<!DOCTYPE html>-->
+<html>
+	
+<!-- Mirrored from makoframework.com/changelog by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Aug 2015 15:41:34 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+		<title>Changelog - Mako Framework</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="assets/img/favicon.ico">
+		<link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="assets/css/font-awesome.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="assets/css/animate.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="assets/css/mako.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="assets/css/backtotop.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="assets/css/prism.css"  media="screen,projection"/>
+
+		<script>
+			var mako = {'base_url': 'http://makoframework.com/'};
+		</script>
+
+		<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-19891169-1']);
+		_gaq.push(['_setDomainName', '.makoframework.com']);
+		_gaq.push(['_trackPageview']);
+		(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+		</script>
+
+	</head>
+
+	<body>
+
+		<ul id="source-dropdown" class="dropdown-content nav-dropdown">
+			<li><a href="contributing/contributors.html">Contributors</a></li>
+			<li><a href="https://github.com/mako-framework">View on GitHub</a></li>
+		</ul>
+
+		<nav id="nav" class="grey darken-3-5">
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="index.html" class="brand-logo"><img src="assets/img/logo50.png" alt="Mako"></a>
+					<ul id="nav-mobile" class="right side-nav">
+						<li><a href="docs/4.html">Documentation</a></li>
+						<li><a href="http://api.makoframework.com/">API</a></li>
+						<li>
+							<a class="dropdown-button" href="#!" data-activates="source-dropdown">Source<i class="mdi-navigation-arrow-drop-down right"></i></a>
+						</li>
+						<li><a href="https://github.com/mako-framework/framework/issues">Issues</a></li>
+						<li><a href="http://forum.makoframework.com/">Community</a></li>
+						<li><a href="#!" id="toggle-search"><i class="large mdi-action-search"></i></a></li>
+					</ul>
+					<a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
+				</div>
+			</div>
+		</nav>
+
+		<div class="row white-text grey darken-3" id="search">
+
+			<div class="container">
+				<form action="https://www.google.com/search" method="get">
+					<input class="form-control" type="text" name="q" placeholder="Search ...">
+					<input type="hidden" name="as_sitesearch" value="makoframework.com">
+				</form>
+			</div>
+
+		</div>
+
+		<div id="content">
+
+			
+
+			
+	<div class="container pt20">
+		<div class="page-content">
+
+			<h1>Changelog</h1>
+
+			<hr>
+
+			<h3>4.5.5 <small>(2015-07-08)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-danger">BUGFIX</span></td>
+  <td>Clean URLs should now work as expected when using the local development server.</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3>4.5.4 <small>(2015-06-17)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-info">IMPROVEMENT</span></td>
+  <td>Better parameter binding for prepared statements.</td>
+</tr>
+<tr>
+  <td><span class="label label-danger">BUGFIX</span></td>
+  <td>The progress bar will no longer fail when <code>0</code> is passed as the item count.</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+  <p>This update requires you to change the data type of the <code>users.banned</code> and <code>users.activated</code> fields from <code>SET</code> to <code>BOOL</code> (or <code>TINYINT(1)</code>).</p>
+</blockquote>
+
+<hr />
+
+<h3>4.5.3 <small>(2015-05-07)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-info">IMPROVEMENT</span></td>
+  <td>The <code>Pagination::paginate()</code> method is now public.</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3>4.5.2 <small>(2015-04-24)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-danger">BUGFIX</span></td>
+  <td>Eager loading criteria now work as expected when eager loading in chunks.</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3>4.5.1 <small>(2015-04-20)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-danger">BUGFIX</span></td>
+  <td>Now possible to eager load more than 1000 unique ids when using SQLite and Oracle (<a href="https://github.com/mako-framework/framework/issues/151">#151</a>).</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3>4.5.0 <small>(2015-04-15)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Now possible to send multiple headers with the same field-name.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added <code>Request::getRoute()</code> method.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added <code>Response::hasHeader()</code> method.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added <code>Response::hasCookie()</code> method.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added <code>Response::removeCookie()</code> method.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added <code>Image::getHeight()</code> method.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added <code>Image::getWidth()</code> method.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added <code>Image::getDimensions()</code> method.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added brute force throttling to the Gatekeeper library.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added a command bus library <a href="https://github.com/mako-framework/framework/pull/138">#138</a>.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>New and improved event handler.</td>
+</tr>
+<tr>
+  <td><span class="label label-info">IMPROVEMENT</span></td>
+  <td>Now possible to select a custom set of columns through a many-to-many relation.</td>
+</tr>
+<tr>
+  <td><span class="label label-info">IMPROVEMENT</span></td>
+  <td>Various optimizations.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td><code>Str::slug()</code> will now encode non-ascii characters as recommened by <a href="http://www.rfc-archive.org/getrfc.php?rfc=3986">RFC-3986</a>.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>Minor changes in the application and package directory structures.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>Added brute force throttling settings to the <code>app/config/gatekeeper.php</code> configuration file.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>Added 3 new fields to the gatekeeper users table.</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+  <p>This release comes with a few minor breaking changes. Check out the migration guide <a href="docs/4.5/getting-started_upgrading.html">here</a>.</p>
+</blockquote>
+
+<hr />
+
+<h3>4.4.5 <small>(2015-03-06)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-danger">BUGFIX</span></td>
+  <td>Fixed bug in <code>app.routes</code> command.</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3>4.3.4, 4.4.4 <small>(2015-02-19)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-danger">BUGFIX</span></td>
+  <td>Fixed language cache issue.</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3>4.4.3 <small>(2015-02-04)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-info">IMPROVEMENT</span></td>
+  <td><code>Query::column()</code> and <code>Query::first()</code> will now be a lot faster in some situations.</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3>4.4.2 <small>(2015-02-03)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-info">IMPROVEMENT</span></td>
+  <td>The command line error handler will now include the error location in the output.</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3>4.4.1 <small>(2015-02-02)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added <code>Output::setFormatter()</code> method.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added <code>Output::isMuted()</code> method.</td>
+</tr>
+<tr>
+  <td><span class="label label-info">IMPROVEMENT</span></td>
+  <td>Controllers no longer need to extend the Mako base controller.</td>
+</tr>
+<tr>
+  <td><span class="label label-info">IMPROVEMENT</span></td>
+  <td>Global reactor options are now sorted alphabetically.</td>
+</tr>
+<tr>
+  <td><span class="label label-info">IMPROVEMENT</span></td>
+  <td>You can now separate package booting into <code>core</code>, <code>web</code> and <code>cli</code>.</td>
+</tr>
+<tr>
+  <td><span class="label label-danger">BUGFIX</span></td>
+  <td>The redis client will no longer try to authenticate when no password is provided.</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+  <p>This update requires a <a href="https://github.com/mako-framework/app/blob/master/app/config/application.php#L188">small change</a> to the <code>app/config/application.php</code> configuration file.</p>
+</blockquote>
+
+<hr />
+
+<h3>4.4.0 <small>(2015-01-26)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Brand new reactor command line tool.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added optional <code>$column</code> parameter to the <code>Query::column()</code> method.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added Mako core class.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added <code>Password::needsRehash()</code> method.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added <code>Request::isSafe()</code> method.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added <code>Session::getToken()</code> method.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added <code>Session::regenerateToken()</code> method.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added <code>Session::validateToken()</code> method.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added <code>token</code> validation rule.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Gatekeeper will automatically rehash passwords if needed.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added <code>attribute</code>, <code>css</code>, <code>url</code> and  <code>js</code> escaping filters.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Escape filters are now also available in plain PHP views.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>Moved <code>init.php</code> file from the framework core to the application.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>Removed the <code>MAKO_VERSION</code> constant (use <code>Mako::VERSION</code> instead).</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>Removed the <code>Password::isLegacyHash()</code> method.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>Removed the <code>$legacyCheck</code> parameter from the <code>Password::validate()</code> method.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>Renamed <code>Session::generateToken()</code> method to <code>Session::generateOneTimeToken</code>.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>Renamed <code>Session::validateToken()</code> method to <code>Session::validateOneTimeToken</code>.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>Renamed <code>token</code> validation rule to <code>one_time_token</code>.</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+  <p>This release comes with a few minor breaking changes. Check out the migration guide <a href="docs/4.4/getting-started_upgrading.html">here</a>.</p>
+</blockquote>
+
+<hr />
+
+<h3>4.0.11, 4.1.5, 4.2.3, 4.3.3 <small>(2015-01-19)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-danger">BUGFIX</span></td>
+  <td>Gatekeeper will use the provided "auth_key" configuration value.</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3>4.3.2 <small>(2014-12-07)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-danger">BUGFIX</span></td>
+  <td>Fixed validation bug.</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3>4.3.1 <small>(2014-12-02)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-danger">BUGFIX</span></td>
+  <td>Fixed routing bug.</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3>4.3.0 <small>(2014-11-27)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added <code>ViewFactory::exists()</code> method.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Views are now cascading. This means that you can override package views in your application.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Language files are now cascading. This means that you can override package language files in your application.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added a ForbiddenException.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Mako now includes default 403, 404, 405 error views that can easily be overriden.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>The ORM will now also forward non-static calls to the query builder.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added <code>Connection::table()</code> convenience method.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added <code>Container::call()</code>  method (<a href="https://github.com/mako-framework/framework/pull/116">#116</a>).</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Route actions are now executed by the <code>Container::call()</code> method (<a href="https://github.com/mako-framework/framework/pull/118">#118</a>).</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Route filters are now executed by the <code>Container::call()</code> method (<a href="https://github.com/mako-framework/framework/pull/119">#119</a>).</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added a session NULL store.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>Moved all http exceptions to the <code>mako\http\exceptions</code> namespace.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>Renamed the <code>PageNotFoundException</code> to <code>NotFoundException</code>.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>Controllers, Tasks and Migrations now use the <code>ContainerAwareTrait</code> trait by default.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>The <code>ORM::builder()</code> method is now public.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>The <code>Route::constraints()</code> method has been renamed to <code>Route::when()</code>.</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+  <p>This release comes with a few minor breaking changes. Check out the migration guide <a href="docs/4.3/getting-started_upgrading.html">here</a>.</p>
+</blockquote>
+
+<hr />
+
+<h3>4.0.10, 4.1.4, 4.2.2 <small>(2014-11-21)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-danger">BUGFIX</span></td>
+  <td>Fixed query builder bug.</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3>4.0.9, 4.1.3, 4.2.1 <small>(2014-11-14)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-danger">BUGFIX</span></td>
+  <td>Fixed MCrypt autoloading issue (<a href="https://github.com/mako-framework/framework/issues/120">#120</a>)</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3>4.2.0 <small>(2014-09-26)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added <code>Time::formatLocalized</code> method.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added <code>TimeZone</code> class.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added a Stopwatch class (<a href="https://github.com/mako-framework/framework/pull/113">#113</a>)</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added support for nested template extension.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added optional migration descriptions.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added <code>render</code> shortcut method to the view factory class.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>It is now possible to configure Gatekeeper to identify users using their username instead of their email.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>The <code>Time</code> class has been moved to the to <code>mako\chrono</code> namespace.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>The <code>locale</code> config option has been removed. You now have to set the appropriate locale for each language instead.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>The <code>ViewFactory::create</code> method will now return an instance of <code>mako\view\View</code> instead of an implementation of <code>mako\view\renderers\RendererInterface</code>.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>Moved <code>app/routes.php</code> to <code>app/routing/routes.php</code>.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>Filters must now be defined in <code>app/routing/filters.php</code>.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>You can now use class filters in addition to closures.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>The <code>UrlBuilder::current</code> method will now include the current query parameters by default.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>Default Mcrypt encryption mode changed from ECB to CBC.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>Removed the <code>app/packages</code> directory. Packages will now be installed in the packagist vendor directory.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>Removed the global helper functions. They have been replaced with a trait and a class (NamespacedFileLoaderTrait and ClassInspector).</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+  <p>This release comes with a few minor breaking changes. Check out the migration guide <a href="docs/4.2/getting-started_upgrading.html">here</a>.</p>
+</blockquote>
+
+<hr />
+
+<h3>4.1.2 <small>(2014-09-05)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-danger">BUGFIX</span></td>
+  <td>Fixed issue with date casting in the ORM.</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3>4.0.8, 4.1.1 <small>(2014-09-01)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-danger">BUGFIX</span></td>
+  <td>Added missing returns in gatekeeper user implementation.</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3>4.1.0 <small>(2014-08-20)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added sepia filter to the image library.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added negate filter to the image library.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added pixelate filter to the image library.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added brightness adjustment to the image library.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added sharpening to the image library.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Now possible to create and restore temporary snapshots when using the image library.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added support for language caching.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added Connection::isAlive() method.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added Connection::reconnect() method.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added Connection::beginTransaction() method.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added Connection::commitTransaction() method.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added Connection::rollBackTransaction() method.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added Connection::getTransactionNestingLevel() method.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added Connection::inTransaction() method.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>It is now possible to configure the ORM to automatically typecast values.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>PageNotFoundExceptions now includes the request method and path (<a href="https://github.com/mako-framework/framework/pull/108">#108</a>).</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Now possible to register custom view renderers without having to implement a custom view factory.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added Application::isCommandLine() method.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Added ErrorHandler::disableLoggingFor() method.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>The logger and errorHandler services are no longer required for an application to work.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>Removed the the ORM::$dateTimeColumms property. Use the new typecast feature instead.</td>
+</tr>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>Selecting specific columns when using the ORM will no longer make the records read-only. Joining however, will do.</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+  <p>You must also add the <code>language_cache</code> key to your <a href="https://github.com/mako-framework/app/blob/master/app/config/application.php#L61">application configuration</a> file.</p>
+</blockquote>
+
+<hr />
+
+<h3>4.0.7 <small>(2014-08-18)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-danger">BUGFIX</span></td>
+  <td>Escape exception message in debug template.</td>
+</tr>
+<tr>
+  <td><span class="label label-success">NEW</span></td>
+  <td>Now possible to configure the date output format when converting ORM records to array and/or json.</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3>4.0.6 <small>(2014-08-5)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-info">IMPROVEMENT</span></td>
+  <td>Improved ORM::toArray() and ORM::toJson methods.</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3>4.0.5 <small>(2014-07-24)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-danger">BUGFIX</span></td>
+  <td>Fixed bug in the file based cache store.</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3>4.0.4 <small>(2014-07-04)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-danger">BUGFIX</span></td>
+  <td>Image library now uses the correct image quality when saving.</td>
+</tr>
+<tr>
+  <td><span class="label label-danger">BUGFIX</span></td>
+  <td>Image library watermarking now works as expected.</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3>4.0.3 <small>(2014-07-02)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-info">IMPROVEMENT</span></td>
+  <td>Errorhandler is no longer loading external JavaScript libraries.</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3>4.0.2 <small>(2014-07-01)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-warning">CHANGE</span></td>
+  <td>Namespaced the helper functions to avoild naming collisions with global functions.</td>
+</tr>
+<tr>
+  <td><span class="label label-danger">BUGFIX</span></td>
+  <td>Added <code>mako\get_class_traits()</code> helper function to improve detection of trait usage.</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3>4.0.1 <small>(2014-06-26)</small></h3>
+
+<p>Update using <code>composer update</code>.</p>
+
+<table class="bordered striped changelog">
+<thead>
+<tr>
+  <th>Change type</th>
+  <th>Change description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><span class="label label-danger">BUGFIX</span></td>
+  <td>Fixed bug where User::isMemberOf would return NULL if group id was used instead of group name.</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3>4.0.0 <small>(2014-06-26)</small></h3>
+
+<p>Mako 4.0.0 is a complete rewrite where the main focus has been on improving testability, extensibility, security and the overall quality of the framework.</p>
+
+<p>Mako 4 also includes a bunch of new features. Here are some of them:</p>
+
+<ul>
+<li>A new and improved RESTful routing system</li>
+<li>A brand new authentication library</li>
+<li>A smart and easy to use dependecy injection container</li>
+<li>Timestamped and OptimisticLocking traits for the ORM</li>
+<li>An image manipulation library that supports both GD and ImageMagick</li>
+</ul>
+
+<p><a href="docs/4-4.html"><em>Check out the documentation for the full list of changes</em></a>.</p>
+
+<blockquote>
+  <p>Note that this is <code>NOT</code> a one step upgrade but the API changes have been kept to a minimum so upgrading a project from Mako 3.6.x shouldn't pose too many problems.</p>
+</blockquote>
+
+		</div>
+	</div>
+
+
+		</div>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col l6 s12">
+						<h5 class="white-text">Git</h5>
+						<p class="grey-text lighten-4 github"></p>
+						<p>
+							<a href="https://travis-ci.org/mako-framework/framework">
+								<img src="https://travis-ci.org/mako-framework/framework.svg?branch=master" alt="">
+							</a>
+						</p>
+						<p>
+							<a class="waves-effect waves-light btn grey darken-1" href="https://github.com/mako-framework/framework/issues">
+								<span id="open-issues">?</span> Open Issues
+							</a>
+							<a class="waves-effect waves-light btn grey darken-1" href="https://github.com/mako-framework/framework/pulls">
+								<span id="pull-requests">?</span> Pull Requests
+							</a>
+						</p>
+					</div>
+					<div class="col l4 offset-l2 s12">
+						<h5 class="white-text">Links</h5>
+						<ul>
+							<li><a class="grey-text lighten-3" href="index.html">Home</a></li>
+							<li><a class="grey-text lighten-3" href="changelog.html">Changelog</a></li>
+							<li><a class="grey-text lighten-3" href="docs/4.html">Documentation</a></li>
+							<li><a class="grey-text lighten-3" href="http://api.makoframework.com/">API</a></li>
+							<li><a class="grey-text lighten-3" href="https://github.com/mako-framework/framework/issues">Issues</a></li>
+							<li><a class="grey-text lighten-3" href="http://forum.makoframework.com/">Community</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					© 2015 Frederic G. Østby - All Rights Reserved
+					<a class="grey-text lighten-4 right" href="https://twitter.com/makoframework">&nbsp;<i class="fa fa-twitter"></i></a>
+					<a class="grey-text lighten-4 right" href="https://github.com/mako-framework">&nbsp;<i class="fa fa-github-alt"></i></a>
+				</div>
+			</div>
+		</footer>
+
+		<a href="#0" class="cd-top">Top</a>
+
+		<script type="text/javascript" src="assets/js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="assets/js/materialize.min.js"></script>
+		<script type="text/javascript" src="assets/js/timeago.min.js"></script>
+		<script type="text/javascript" src="assets/js/mako.js"></script>
+		<script type="text/javascript" src="assets/js/prism.js"></script>
+		<script type="text/javascript" src="assets/js/backtotop.js"></script>
+
+	</body>
+
+<!-- Mirrored from makoframework.com/changelog by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Aug 2015 15:41:35 GMT -->
+</html>

@@ -1,0 +1,881 @@
+
+
+
+<!--<!DOCTYPE html>-->
+<html>
+	
+<!-- Mirrored from makoframework.com/docs/4.4/getting-started:dependency-injection by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Aug 2015 15:42:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+		<title>Documentation - 4.4 - Mako Framework</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="../../assets/img/favicon.ico">
+		<link type="text/css" rel="stylesheet" href="../../assets/css/materialize.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="../../assets/css/font-awesome.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="../../assets/css/animate.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="../../assets/css/mako.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="../../assets/css/backtotop.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="../../assets/css/prism.css"  media="screen,projection"/>
+
+		<script>
+			var mako = {'base_url': 'http://makoframework.com/'};
+		</script>
+
+		<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-19891169-1']);
+		_gaq.push(['_setDomainName', '.makoframework.com']);
+		_gaq.push(['_trackPageview']);
+		(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+		</script>
+
+	</head>
+
+	<body>
+
+		<ul id="source-dropdown" class="dropdown-content nav-dropdown">
+			<li><a href="../../contributing/contributors.html">Contributors</a></li>
+			<li><a href="https://github.com/mako-framework">View on GitHub</a></li>
+		</ul>
+
+		<nav id="nav" class="grey darken-3-5">
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="../../index.html" class="brand-logo"><img src="../../assets/img/logo50.png" alt="Mako"></a>
+					<ul id="nav-mobile" class="right side-nav">
+						<li><a href="../4.html">Documentation</a></li>
+						<li><a href="http://api.makoframework.com/">API</a></li>
+						<li>
+							<a class="dropdown-button" href="#!" data-activates="source-dropdown">Source<i class="mdi-navigation-arrow-drop-down right"></i></a>
+						</li>
+						<li><a href="https://github.com/mako-framework/framework/issues">Issues</a></li>
+						<li><a href="http://forum.makoframework.com/">Community</a></li>
+						<li><a href="#!" id="toggle-search"><i class="large mdi-action-search"></i></a></li>
+					</ul>
+					<a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
+				</div>
+			</div>
+		</nav>
+
+		<div class="row white-text grey darken-3" id="search">
+
+			<div class="container">
+				<form action="https://www.google.com/search" method="get">
+					<input class="form-control" type="text" name="q" placeholder="Search ...">
+					<input type="hidden" name="as_sitesearch" value="makoframework.com">
+				</form>
+			</div>
+
+		</div>
+
+		<div id="content">
+
+			
+		<div class="row white z-depth-1" id="tab-wrapper">
+			<div class="container">
+				<div class="row tabs">
+											<div class="col s12 m3 "><p><a href="../4.html">4.5</a></p></div>
+											<div class="col s12 m3 active"><p><a href="../4-2.html">4.4</a></p></div>
+											<div class="col s12 m3 "><p><a href="../4-3.html">4.3</a></p></div>
+										<div class="col s12 m3 ">
+						<select id="legacy-docs">
+							<option value="" disabled selected>Older</option>
+															<option value="http://makoframework.com/docs/4.2">4.2</option>
+															<option value="http://makoframework.com/docs/4.1">4.1</option>
+															<option value="http://makoframework.com/docs/4.0">4.0</option>
+															<option value="http://makoframework.com/docs/3.6">3.6</option>
+													</select>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+			
+	<div class="container">
+
+		<button class="grey lighten-2 waves-effect waves-light btn-flat" type="submit" name="action" id="toggle-menu">Open Menu</button>
+
+		<div class="row content">
+			<div class="col l3 m12 s12 left-menu">
+
+				<div id="left-nav">
+				
+					
+							<div class="menu-header">Getting started</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="getting-started_installation.html">
+											Installation										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_configuration.html">
+											Configuration										</a>
+									</p>
+
+								
+									<p>
+										<a  class="active" href="getting-started_dependency-injection.html">
+											Dependency injection										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_error-handling.html">
+											Error handling										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_constants.html">
+											Constants										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_coding-standards.html">
+											Coding standards										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_upgrading.html">
+											Upgrading										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Routing and controllers</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="routing-and-controllers_routing.html">
+											Routing										</a>
+									</p>
+
+								
+									<p>
+										<a  href="routing-and-controllers_controllers.html">
+											Controllers										</a>
+									</p>
+
+								
+									<p>
+										<a  href="routing-and-controllers_request.html">
+											Request										</a>
+									</p>
+
+								
+									<p>
+										<a  href="routing-and-controllers_response.html">
+											Response										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Command line</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="command-line_basics.html">
+											Basics										</a>
+									</p>
+
+								
+									<p>
+										<a  href="command-line_custom-commands.html">
+											Custom commands										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Databases (SQL)</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="databases-sql_basics.html">
+											Basics										</a>
+									</p>
+
+								
+									<p>
+										<a  href="databases-sql_query-builder.html">
+											Query builder										</a>
+									</p>
+
+								
+									<p>
+										<a  href="databases-sql_orm.html">
+											Orm										</a>
+									</p>
+
+								
+									<p>
+										<a  href="databases-sql_migrations.html">
+											Migrations										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Databases (NoSQL)</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="databases-nosql_redis.html">
+											Redis										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Security</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="security_authentication.html">
+											Authentication										</a>
+									</p>
+
+								
+									<p>
+										<a  href="security_password-hashing.html">
+											Password hashing										</a>
+									</p>
+
+								
+									<p>
+										<a  href="security_encryption-and-signing.html">
+											Encryption and signing										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Packages</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="packages_packages.html">
+											Packages										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Learn more</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="learn-more_array-helper.html">
+											Array helper										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_caching.html">
+											Caching										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_date-and-time.html">
+											Date and time										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_events.html">
+											Events										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_file-system.html">
+											File system										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_html-helper.html">
+											Html helper										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_humanizer.html">
+											Humanizer										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_image-manipulation.html">
+											Image manipulation										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_internationalization.html">
+											Internationalization										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_logging.html">
+											Logging										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_number-helper.html">
+											Number helper										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_pagination.html">
+											Pagination										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_sessions.html">
+											Sessions										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_string-helper.html">
+											String helper										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_url-builder.html">
+											Url builder										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_uuid-helper.html">
+											Uuid helper										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_validation.html">
+											Validation										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_views.html">
+											Views										</a>
+									</p>
+
+								
+							</div>
+
+									</div>
+
+			</div>
+			<div class="col l9 m12 s12">
+				<div class="page-content">
+					<h1>Dependency injection</h1>
+
+<hr />
+
+<ul>
+<li><a href="#basics">Basics</a></li>
+<li><a href="#services">Services</a>
+
+<ul>
+<li><a href="#services:core">Core</a></li>
+<li><a href="#services:web">Web</a></li>
+<li><a href="#services:cli">CLI</a></li>
+</ul></li>
+<li><a href="#container_aware">Container aware</a></li>
+</ul>
+
+<hr />
+
+<p>Mako 4 comes with an easy to use inversion of control container. Using dependency injection makes your application more maintainable and decoupled. Another benefit of using the dependency injection pattern is that it greatly increases the testability of the code, thus making it less prone to bugs.</p>
+
+<blockquote>
+  <p>All controllers, migrations and commands are instantiated using the IoC container making it easy to inject dependencies.</p>
+</blockquote>
+
+<hr />
+
+<p><a id="basics"></a></p>
+
+<h3>Basics</h3>
+
+<p>The <code>register</code> method allows you to register a dependency in the container.</p>
+
+<pre><code>$container-&gt;register('app\lib\FooInterface', 'app\lib\Foo');
+</code></pre>
+
+<p>You can also register a key along with the type hint to so that you can save a few keystrokes when resolving classes.</p>
+
+<pre><code>$container-&gt;register(['app\lib\FooInterface', 'foo'], 'app\lib\Foo');
+</code></pre>
+
+<p>You can also register your dependencies using a closure. The closure will not be executed before it is required.</p>
+
+<pre><code>$container-&gt;register(['app\lib\BarInterface', 'bar'], function($container)
+{
+    return new \app\lib\Bar('parameter value');
+});
+</code></pre>
+
+<p>The <code>registerSingleton</code> method does the same as the <code>register</code> method except that it makes sure that the same instance is returned every time the class is resolved through the container.</p>
+
+<pre><code>$container-&gt;registerSingleton(['app\lib\BarInterface', 'bar'], function($container)
+{
+    return new \app\lib\Bar('parameter value');
+});
+</code></pre>
+
+<p>The <code>registerInstance</code> method is similar to the <code>registerSingleton</code> method. The only difference is that it allows you to register an existing instance in the container.</p>
+
+<pre><code>$container-&gt;registerInstance(['app\lib\BarInterface', 'bar'], new \app\lib\Bar('parameter value'));
+</code></pre>
+
+<p>The <code>has</code> method allows you to check for the presence of an item in the container.</p>
+
+<pre><code>// Check using the type hint
+
+if($container-&gt;has('app\lib\BarInterface'))
+{
+    // do something
+}
+
+// Or the optional key
+
+if($container-&gt;has('bar'))
+{
+    // do something
+}
+</code></pre>
+
+<p>The <code>get</code> method lets you resolve a dependency through the IoC container.</p>
+
+<pre><code>// Resolve the class using the type hint
+
+$foo = $container-&gt;get('app\lib\FooInterface');
+
+// Or the optional key
+
+$foo = $container-&gt;get('foo');
+</code></pre>
+
+<p>The class does not have to be registered in the container to be resolvable.</p>
+
+<pre><code>class Depends
+{
+    protected $foo;
+    protected $bar;
+
+    public function __construct(\app\lib\FooInterface $foo, \app\lib\BarInterface $bar)
+    {
+        $this-&gt;foo = $foo;
+        $this-&gt;bar = $bar;
+    }
+}
+</code></pre>
+
+<p>We can now resolve the <code>Depends</code> class using the IoC container. Both its dependencies will automatically be injected.</p>
+
+<pre><code>$depends = $container-&gt;get('Depends');
+</code></pre>
+
+<p>The <code>getFresh</code> method works just like the <code>get</code> method except that it returns a fresh instance even if the class that you are resolving is registered as a singlegon.</p>
+
+<pre><code>$foo = $container-&gt;getFresh('bar');
+</code></pre>
+
+<blockquote>
+  <p>The <code>getFresh</code> method might not work as expected for classes registered using the <code>registerInstance</code> method.</p>
+</blockquote>
+
+<p>The <code>call</code> method allows you to execute a callable and automatically inject its dependencies.</p>
+
+<pre><code>$returnValue = $container-&gt;call(function(\app\lib\FooInterface $foo, \app\lib\BarInterface $bar)
+{
+    // $foo and $bar will automatically be injected into the callable
+});
+</code></pre>
+
+<hr />
+
+<p><a id="services"></a></p>
+
+<h3>Services</h3>
+
+<p>Services are an easy and clean way of registering dependecies in the IoC container.</p>
+
+<p>Mako includes a number of services for your convenience and you'll find a complete list in the <code>app/config/application.php</code> configuration file. You can add your own or remove the ones that you don't need in your application.</p>
+
+<p>Services are split up in 3 groups. <code>Core</code> services are loaded both web and cli environments while <code>web</code> and <code>cli</code> services are only loaded for web requests and command line operations respectively.</p>
+
+<p><a id="services:core"></a></p>
+
+<h4>Core</h4>
+
+<table class="bordered striped">
+<thead>
+<tr>
+  <th>Service</th>
+  <th>Type hint</th>
+  <th>Key</th>
+  <th>Description</th>
+  <th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td></td>
+  <td>mako\syringe\Syringe</td>
+  <td>container</td>
+  <td>IoC container</td>
+  <td>✔</td>
+</tr>
+<tr>
+  <td></td>
+  <td>mako\application\Application</td>
+  <td>app</td>
+  <td>Application</td>
+  <td>✔</td>
+</tr>
+<tr>
+  <td></td>
+  <td>mako\file\FileSystem</td>
+  <td>fileSystem</td>
+  <td>File system abstraction</td>
+  <td>✔</td>
+</tr>
+<tr>
+  <td></td>
+  <td>mako\config\Config</td>
+  <td>config</td>
+  <td>Config loader</td>
+  <td>✔</td>
+</tr>
+<tr>
+  <td>CacheService</td>
+  <td>mako\cache\CacheManager</td>
+  <td>cache</td>
+  <td>Cache manager</td>
+  <td>✘</td>
+</tr>
+<tr>
+  <td>CryptoService</td>
+  <td>mako\security\crypto\CryptoManager</td>
+  <td>crypto</td>
+  <td>Crypto manager</td>
+  <td>✘</td>
+</tr>
+<tr>
+  <td>DatabaseService</td>
+  <td>mako\database\ConnectionManager</td>
+  <td>database</td>
+  <td>Database connection manager</td>
+  <td>✘</td>
+</tr>
+<tr>
+  <td>GatekeeperService  </td>
+  <td>mako\auth\Gatekeeper</td>
+  <td>gatekeeper</td>
+  <td>Gatekeeper autentication</td>
+  <td>✘</td>
+</tr>
+<tr>
+  <td>HumanizerService</td>
+  <td>mako\utility\Humanizer</td>
+  <td>humanizer</td>
+  <td>Humanizer helper</td>
+  <td>✘</td>
+</tr>
+<tr>
+  <td>I18nService</td>
+  <td>mako\i18n\I18n</td>
+  <td>i18n</td>
+  <td>Internationalization class</td>
+  <td>✘</td>
+</tr>
+<tr>
+  <td>LoggerService</td>
+  <td>Psr\Log\LoggerInterface</td>
+  <td>logger </td>
+  <td>Monolog logger</td>
+  <td>✘</td>
+</tr>
+<tr>
+  <td>PaginationFactoryService</td>
+  <td>mako\pagination\PaginationFactory</td>
+  <td>pagination</td>
+  <td>Pagination factory</td>
+  <td>✘</td>
+</tr>
+<tr>
+  <td>RedisService             </td>
+  <td>mako\redis\ConnectionManager</td>
+  <td>redis</td>
+  <td>Redis connection manager</td>
+  <td>✘</td>
+</tr>
+<tr>
+  <td>RequestService</td>
+  <td>mako\http\Request</td>
+  <td>request</td>
+  <td>Request</td>
+  <td>✔</td>
+</tr>
+<tr>
+  <td>ResponseService</td>
+  <td>mako\http\Response</td>
+  <td>response</td>
+  <td>Response</td>
+  <td>✔</td>
+</tr>
+<tr>
+  <td>RouteService</td>
+  <td>mako\http\routing\Routes</td>
+  <td>routes</td>
+  <td>Route collection</td>
+  <td>✔</td>
+</tr>
+<tr>
+  <td>SessionService</td>
+  <td>mako\session\Session</td>
+  <td>session</td>
+  <td>Session</td>
+  <td>✘</td>
+</tr>
+<tr>
+  <td>SignerService</td>
+  <td>mako\security\Signer</td>
+  <td>signer</td>
+  <td>Signer</td>
+  <td>✔</td>
+</tr>
+<tr>
+  <td>URLBuilderService</td>
+  <td>mako\http\routing\URLBuilder</td>
+  <td>urlBuilder</td>
+  <td>URL builder</td>
+  <td>✘</td>
+</tr>
+<tr>
+  <td>ValidatorFactoryService</td>
+  <td>mako\validator\ValidatorFactory</td>
+  <td>validator</td>
+  <td>Validation factory</td>
+  <td>✘</td>
+</tr>
+<tr>
+  <td>ViewFactoryService</td>
+  <td>mako\view\ViewFactory</td>
+  <td>view</td>
+  <td>View factory</td>
+  <td>✘</td>
+</tr>
+</tbody>
+</table>
+
+<p><a id="services:web"></a></p>
+
+<h4>Web</h4>
+
+<table class="bordered striped">
+<thead>
+<tr>
+  <th>Service</th>
+  <th>Type hint</th>
+  <th>Key</th>
+  <th>Description</th>
+  <th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>ErrorHandlerService</td>
+  <td>mako\error\ErrorHandler</td>
+  <td>errorHandler</td>
+  <td>Error handler</td>
+  <td>✘</td>
+</tr>
+</tbody>
+</table>
+
+<p><a id="services:cli"></a></p>
+
+<h4>Cli</h4>
+
+<table class="bordered striped">
+<thead>
+<tr>
+  <th>Service</th>
+  <th>Type hint</th>
+  <th>Key</th>
+  <th>Description</th>
+  <th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>InputService</td>
+  <td>mako\cli\input\Input</td>
+  <td>input</td>
+  <td>Input</td>
+  <td>✔</td>
+</tr>
+<tr>
+  <td>OutputService</td>
+  <td>mako\cli\output\Ouput</td>
+  <td>output</td>
+  <td>Output</td>
+  <td>✔</td>
+</tr>
+<tr>
+  <td>ErrorHandlerService</td>
+  <td>mako\error\ErrorHandler</td>
+  <td>errorHandler</td>
+  <td>Error handler</td>
+  <td>✘</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+  <p>Note that some of the services depend on each other (e.g. the session needs the database manager if you choose to store your sessions in the database).</p>
+</blockquote>
+
+<hr />
+
+<p><a id="container_aware"></a></p>
+
+<h3>Container aware</h3>
+
+<p>You can also make a class that is instantiated by the container "container aware" by using the <code>ContainerAwareTrait</code>. This means that you can use the IoC container as a service locator if you prefer that.</p>
+
+<blockquote>
+  <p>Note that controllers, migrations and taks are container aware by default.</p>
+</blockquote>
+
+<p>The IoC container is always avaiable through the <code>$container</code> property.</p>
+
+<pre><code>$this-&gt;container-&gt;get('view');
+</code></pre>
+
+<p>The <code>ContainerAwareTrait</code> also implements the magic <code>__get()</code> method. This allows you to resolve classes through the IoC container using overloading.</p>
+
+<pre><code>$this-&gt;view; // Instance of mako\view\ViewFactory
+</code></pre>
+
+<p>Resolved instances will be cached and reused when using overloading. This can result in unexpected behaviour if you don't expect a to reuse the same instance of your dependency.</p>
+
+<p>Use the <code>$this-&gt;container-&gt;get('...')</code> method instead of overloading if you need a "fresh" instance from the container.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+		</div>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col l6 s12">
+						<h5 class="white-text">Git</h5>
+						<p class="grey-text lighten-4 github"></p>
+						<p>
+							<a href="https://travis-ci.org/mako-framework/framework">
+								<img src="https://travis-ci.org/mako-framework/framework.svg?branch=master" alt="">
+							</a>
+						</p>
+						<p>
+							<a class="waves-effect waves-light btn grey darken-1" href="https://github.com/mako-framework/framework/issues">
+								<span id="open-issues">?</span> Open Issues
+							</a>
+							<a class="waves-effect waves-light btn grey darken-1" href="https://github.com/mako-framework/framework/pulls">
+								<span id="pull-requests">?</span> Pull Requests
+							</a>
+						</p>
+					</div>
+					<div class="col l4 offset-l2 s12">
+						<h5 class="white-text">Links</h5>
+						<ul>
+							<li><a class="grey-text lighten-3" href="../../index.html">Home</a></li>
+							<li><a class="grey-text lighten-3" href="../../changelog.html">Changelog</a></li>
+							<li><a class="grey-text lighten-3" href="../4.html">Documentation</a></li>
+							<li><a class="grey-text lighten-3" href="http://api.makoframework.com/">API</a></li>
+							<li><a class="grey-text lighten-3" href="https://github.com/mako-framework/framework/issues">Issues</a></li>
+							<li><a class="grey-text lighten-3" href="http://forum.makoframework.com/">Community</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					© 2015 Frederic G. Østby - All Rights Reserved
+					<a class="grey-text lighten-4 right" href="https://twitter.com/makoframework">&nbsp;<i class="fa fa-twitter"></i></a>
+					<a class="grey-text lighten-4 right" href="https://github.com/mako-framework">&nbsp;<i class="fa fa-github-alt"></i></a>
+				</div>
+			</div>
+		</footer>
+
+		<a href="#0" class="cd-top">Top</a>
+
+		<script type="text/javascript" src="../../assets/js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../assets/js/materialize.min.js"></script>
+		<script type="text/javascript" src="../../assets/js/timeago.min.js"></script>
+		<script type="text/javascript" src="../../assets/js/mako.js"></script>
+		<script type="text/javascript" src="../../assets/js/prism.js"></script>
+		<script type="text/javascript" src="../../assets/js/backtotop.js"></script>
+
+	</body>
+
+<!-- Mirrored from makoframework.com/docs/4.4/getting-started:dependency-injection by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Aug 2015 15:42:32 GMT -->
+</html>

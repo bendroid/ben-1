@@ -141,6 +141,9 @@ blockquote .b-text {
     left: 0;
     top: 0;
     opacity: 0
+	visibility: inherit;
+	opacity: 1;
+	transform: matrix(1, 0, 0, 1, 0, 0)
 }
 .io-nav-inner {
     box-sizing: border-box;
@@ -215,7 +218,10 @@ blockquote .b-text {
         -webkit-flex: 0 0 250px;
         flex: 0 0 250px;
         min-width: 250px;
-        position: relative
+        position: relative;
+		visibility: inherit;
+		opacity: 1;
+		transform: matrix(1, 0, 0, 1, 0, 0);
     }
     .io-nav-inner {
         -ms-flex-direction: column;
@@ -299,6 +305,9 @@ blockquote .b-text {
         font-weight: 100;
         font-size: 3rem;
         width: 80%
+		visibility: inherit;
+		opacity: 1;
+		transform: matrix(1, 0, 0, 1, 0, 0);
     }
     .io-nav-text .io-nav-header-name strong {
         font-weight: 700
@@ -307,6 +316,9 @@ blockquote .b-text {
         font-size: 12px;
         text-align: right;
         width: 80%
+		visibility: inherit;
+		opacity: 1;
+		transform: matrix(1, 0, 0, 1, 0, 0);
     }
     .io-navigation {
         box-sizing: border-box;
@@ -321,7 +333,7 @@ blockquote .b-text {
         -webkit-flex-direction: column;
         flex-direction: column;
         margin-top: 10px;
-        background: #fff
+        background: #fff;
     }
     .io-navigation .io-navigation-item {
         box-sizing: border-box;

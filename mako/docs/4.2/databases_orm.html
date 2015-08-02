@@ -1,0 +1,1180 @@
+
+
+
+<!--<!DOCTYPE html>-->
+<html>
+	
+<!-- Mirrored from makoframework.com/docs/4.2/databases:orm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Aug 2015 15:42:54 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+		<title>Documentation - 4.2 - Mako Framework</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="../../assets/img/favicon.ico">
+		<link type="text/css" rel="stylesheet" href="../../assets/css/materialize.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="../../assets/css/font-awesome.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="../../assets/css/animate.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="../../assets/css/mako.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="../../assets/css/backtotop.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="../../assets/css/prism.css"  media="screen,projection"/>
+
+		<script>
+			var mako = {'base_url': 'http://makoframework.com/'};
+		</script>
+
+		<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-19891169-1']);
+		_gaq.push(['_setDomainName', '.makoframework.com']);
+		_gaq.push(['_trackPageview']);
+		(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+		</script>
+
+	</head>
+
+	<body>
+
+		<ul id="source-dropdown" class="dropdown-content nav-dropdown">
+			<li><a href="../../contributing/contributors.html">Contributors</a></li>
+			<li><a href="https://github.com/mako-framework">View on GitHub</a></li>
+		</ul>
+
+		<nav id="nav" class="grey darken-3-5">
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="../../index.html" class="brand-logo"><img src="../../assets/img/logo50.png" alt="Mako"></a>
+					<ul id="nav-mobile" class="right side-nav">
+						<li><a href="../4.html">Documentation</a></li>
+						<li><a href="http://api.makoframework.com/">API</a></li>
+						<li>
+							<a class="dropdown-button" href="#!" data-activates="source-dropdown">Source<i class="mdi-navigation-arrow-drop-down right"></i></a>
+						</li>
+						<li><a href="https://github.com/mako-framework/framework/issues">Issues</a></li>
+						<li><a href="http://forum.makoframework.com/">Community</a></li>
+						<li><a href="#!" id="toggle-search"><i class="large mdi-action-search"></i></a></li>
+					</ul>
+					<a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
+				</div>
+			</div>
+		</nav>
+
+		<div class="row white-text grey darken-3" id="search">
+
+			<div class="container">
+				<form action="https://www.google.com/search" method="get">
+					<input class="form-control" type="text" name="q" placeholder="Search ...">
+					<input type="hidden" name="as_sitesearch" value="makoframework.com">
+				</form>
+			</div>
+
+		</div>
+
+		<div id="content">
+
+			
+		<div class="row white z-depth-1" id="tab-wrapper">
+			<div class="container">
+				<div class="row tabs">
+											<div class="col s12 m3 "><p><a href="../4.html">4.5</a></p></div>
+											<div class="col s12 m3 "><p><a href="../4-2.html">4.4</a></p></div>
+											<div class="col s12 m3 "><p><a href="../4-3.html">4.3</a></p></div>
+										<div class="col s12 m3 active">
+						<select id="legacy-docs">
+							<option value="" disabled selected>Older</option>
+															<option value="http://makoframework.com/docs/4.2">4.2</option>
+															<option value="http://makoframework.com/docs/4.1">4.1</option>
+															<option value="http://makoframework.com/docs/4.0">4.0</option>
+															<option value="http://makoframework.com/docs/3.6">3.6</option>
+													</select>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+			
+	<div class="container">
+
+		<button class="grey lighten-2 waves-effect waves-light btn-flat" type="submit" name="action" id="toggle-menu">Open Menu</button>
+
+		<div class="row content">
+			<div class="col l3 m12 s12 left-menu">
+
+				<div id="left-nav">
+				
+					
+							<div class="menu-header">Getting started</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="getting-started_installation.html">
+											Installation										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_configuration.html">
+											Configuration										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_dependency-injection.html">
+											Dependency injection										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_error-handling.html">
+											Error handling										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_constants.html">
+											Constants										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_coding-standards.html">
+											Coding standards										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_upgrading.html">
+											Upgrading										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Routing and controllers</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="routing-and-controllers_routing.html">
+											Routing										</a>
+									</p>
+
+								
+									<p>
+										<a  href="routing-and-controllers_controllers.html">
+											Controllers										</a>
+									</p>
+
+								
+									<p>
+										<a  href="routing-and-controllers_request.html">
+											Request										</a>
+									</p>
+
+								
+									<p>
+										<a  href="routing-and-controllers_response.html">
+											Response										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Databases</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="databases_basics.html">
+											Basics										</a>
+									</p>
+
+								
+									<p>
+										<a  href="databases_query-builder.html">
+											Query builder										</a>
+									</p>
+
+								
+									<p>
+										<a  class="active" href="databases_orm.html">
+											Orm										</a>
+									</p>
+
+								
+									<p>
+										<a  href="databases_migrations.html">
+											Migrations										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Command line</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="command-line_basics.html">
+											Basics										</a>
+									</p>
+
+								
+									<p>
+										<a  href="command-line_custom-tasks.html">
+											Custom tasks										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Packages</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="packages_packages.html">
+											Packages										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Learn more</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="learn-more_array-helper.html">
+											Array helper										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_authentication.html">
+											Authentication										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_caching.html">
+											Caching										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_date-and-time.html">
+											Date and time										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_encryption-and-signing.html">
+											Encryption and signing										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_events.html">
+											Events										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_file-system.html">
+											File system										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_html-helper.html">
+											Html helper										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_humanizer.html">
+											Humanizer										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_image-manipulation.html">
+											Image manipulation										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_internationalization.html">
+											Internationalization										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_logging.html">
+											Logging										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_number-helper.html">
+											Number helper										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_pagination.html">
+											Pagination										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_password-hashing.html">
+											Password hashing										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_redis-client.html">
+											Redis client										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_sessions.html">
+											Sessions										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_string-helper.html">
+											String helper										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_url-builder.html">
+											Url builder										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_uuid-helper.html">
+											Uuid helper										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_validation.html">
+											Validation										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_views.html">
+											Views										</a>
+									</p>
+
+								
+							</div>
+
+									</div>
+
+			</div>
+			<div class="col l9 m12 s12">
+				<div class="page-content">
+					<h1>ORM</h1>
+
+<hr />
+
+<ul>
+<li><a href="#naming_conventions">Naming conventions</a></li>
+<li><a href="#basic_usage">Basic usage</a>
+
+<ul>
+<li><a href="#basic_usage:crud">CRUD</a></li>
+<li><a href="#basic_usage:selecting_columns">Selecting columns</a></li>
+<li><a href="#basic_usage:joins">Joins</a></li>
+</ul></li>
+<li><a href="#relations">Relations</a>
+
+<ul>
+<li><a href="#relations:has_one">Has one</a></li>
+<li><a href="#relations:has_many">Has many</a></li>
+<li><a href="#relations:belongs_to">Belongs to</a></li>
+<li><a href="#relations:many_to_many">Many to many</a></li>
+<li><a href="#relations:relation_criteria">Relation criteria</a></li>
+<li><a href="#relations:creating_related_records">Creating related records</a></li>
+<li><a href="#relations:eager_loading">Eager loading</a></li>
+<li><a href="#relations:overriding_naming_conventions">Overriding naming conventions</a></li>
+</ul></li>
+<li><a href="#automatic_typecasting">Automatic typecasting</a>
+
+<ul>
+<li><a href="#automatic_typecasting:scalars">Scalars</a></li>
+<li><a href="#automatic_typecasting:datetime">DateTime</a></li>
+</ul></li>
+<li><a href="#mutators_and_accessors">Mutators and accessors</a></li>
+<li><a href="#scopes">Scopes</a></li>
+<li><a href="#mass_assignment">Mass assignment</a></li>
+<li><a href="#optimistic_locking">Optimistic locking</a></li>
+<li><a href="#read_only_records">Read-only records</a></li>
+<li><a href="#cloning_records">Cloning records</a></li>
+<li><a href="#array_and_json_representations">Array and JSON representations</a></li>
+<li><a href="#traits">Traits</a>
+
+<ul>
+<li><a href="#traits:timestamped">Timestamped</a></li>
+<li><a href="#traits:optimistic_locking">Optimistic locking</a></li>
+</ul></li>
+</ul>
+
+<hr />
+
+<p>The ORM lets you map your database tables to objects and create relations between them.</p>
+
+<hr />
+
+<p><a id="naming_conventions"></a></p>
+
+<h3>Naming conventions</h3>
+
+<p>The Mako ORM does not impose a naming standard on model class names but best practice is to use the camel cased singular form of the table name.</p>
+
+<table class="bordered striped">
+<thead>
+<tr>
+  <th>Table name</th>
+  <th>Model name       </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>articles</td>
+  <td>Article</td>
+</tr>
+<tr>
+  <td>import_jobs</td>
+  <td>ImportJob</td>
+</tr>
+</tbody>
+</table>
+
+<p>If you want to use the ORM on an existing database and don't want to rename all your tables then you can use the <code>$tableName</code> property to define the name of your table.</p>
+
+<p>All tables are also expected to have an auto incrementing primary key column named id. The name of the primary key column can be configured using the <code>$primaryKey</code> property.</p>
+
+<p>The ORM expects foreign key names to use the following the pattern <code>&lt;model name&gt;_id</code> (e.g., item_id, user_id). This can be configured when setting up relations and we'll get back to this later on.</p>
+
+<hr />
+
+<p><a id="key_types"></a></p>
+
+<h3>Key types</h3>
+
+<p>As previously mentioned, the ORM assumes that all your tables have an auto incrementing primary key by default. You can make it generate UUIDs, make your own custom key generator or tell it that your table doesn't have a primary key.</p>
+
+<p>Use the <code>$primaryKeyType</code> property to define the key type.</p>
+
+<table class="bordered striped">
+<thead>
+<tr>
+  <th>Key type</th>
+  <th>Constant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Auto incrementing</td>
+  <td>ORM::PRIMARY_KEY_TYPE_INCREMENTING</td>
+</tr>
+<tr>
+  <td>UUID</td>
+  <td>ORM::PRIMARY_KEY_TYPE_UUID</td>
+</tr>
+<tr>
+  <td>Custom</td>
+  <td>ORM::PRIMARY_KEY_TYPE_CUSTOM</td>
+</tr>
+<tr>
+  <td>None</td>
+  <td>ORM::PRIMARY_KEY_TYPE_NONE</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+  <p>If you choose to use your own custom key generator then you'll have to implement the <code>generatePrimaryKey</code> method in your model class. You must also make sure that the generated value is unique.</p>
+</blockquote>
+
+<hr />
+
+<p><a id="basic_usage"></a></p>
+
+<h3>Basic usage</h3>
+
+<p><a id="basic_usage:crud"></a></p>
+
+<h4>CRUD</h4>
+
+<p>Lets say you have a table called <code>articles</code> with three columns (id, title and content). This is all you need to interact with the table:</p>
+
+<pre><code>&lt;?php
+
+namespace app\models;
+
+class Article extends \mako\database\midgard\ORM
+{
+    protected $tableName = 'articles';
+}
+</code></pre>
+
+<p>Creating a new record is as simple as this:</p>
+
+<pre><code>$article = new Article();
+
+$article-&gt;title   = 'Super awesome stuff';
+$article-&gt;content = 'This is an article about some super awesome stuff.';
+
+$article-&gt;save();
+</code></pre>
+
+<p>You can then fetch the article by its primary key value like this:</p>
+
+<pre><code>$article = Article::get(1); // Will return FALSE if not found
+</code></pre>
+
+<p>The ORM is built on top of the <a href="databases_query-builder.html">query builder</a> so you can also use other criteria to find your record:</p>
+
+<pre><code>$article = Article::where('title', '=', 'Super awesome stuff')-&gt;first();
+</code></pre>
+
+<p>Modifying an existing record is done like this:</p>
+
+<pre><code>$article = Article::get(1);
+
+$article-&gt;title = 'New title';
+
+$article-&gt;save();
+</code></pre>
+
+<p>And deleting a record is done like this:</p>
+
+<pre><code>$article = Article::get(1);
+
+$article-&gt;delete();
+</code></pre>
+
+<p><a id="basic_usage:selecting_columns"></a></p>
+
+<h4>Selecting columns</h4>
+
+<p>By default the ORM selects all columns from the result set. You can specify the columns you want to select like this:</p>
+
+<pre><code>$articles = Article::select(['id', 'title'])-&gt;all();
+</code></pre>
+
+<blockquote>
+  <p>Note that the primary key will automatically be included in the array of selected columns.</p>
+</blockquote>
+
+<p><a id="basic_usage:joins"></a></p>
+
+<h4>Joins</h4>
+
+<p>You can also use joins when working with the ORM. In the following example we'll select all articles that have at least one comment:</p>
+
+<pre><code>$articles = Article::join('comments', 'article.id', '=', 'comments.article_id')-&gt;all();
+</code></pre>
+
+<p>The code above will execute the following SQL:</p>
+
+<pre><code>SELECT `articles`.* FROM `articles` INNER JOIN `comments` ON `article`.`id` = `comments`.`article_id`
+</code></pre>
+
+<p>It will return duplicates for articles that have more than one comment. This can be solved using a distinct select:</p>
+
+<pre><code>$articles = Article::distinct()-&gt;join('comments', 'article.id', '=', 'comments.article_id')-&gt;all();
+</code></pre>
+
+<blockquote>
+  <p>Note that joining will make the selected records read-only.</p>
+</blockquote>
+
+<hr />
+
+<p><a id="relations"></a></p>
+
+<h3>Relations</h3>
+
+<p>Being able to set up relations between tables is important when working with databases. The ORM supports <code>has one</code>, <code>belongs</code> to, <code>has many</code> and <code>many to many</code> relations.</p>
+
+<p><a id="relations:has_one"></a></p>
+
+<h4>Has one</h4>
+
+<p>Lets create a user model and a profile model and set up a <code>has one</code> relation between them.</p>
+
+<pre><code>&lt;?php
+
+namespace app\models;
+
+class User extends \mako\database\midgard\ORM
+{
+    protected $tableName = 'users';
+
+    public function profile()
+    {
+        return $this-&gt;hasOne('\app\models\Profile');
+    }
+}
+</code></pre>
+
+<p>Lets not bother creating a relation in the profile model jus yet.</p>
+
+<pre><code>&lt;?php
+
+namespace app\models;
+
+class Profile extends \mako\database\midgard\ORM
+{
+    protected $tableName = 'profiles';
+}
+</code></pre>
+
+<p>You can now access a users profile like this:</p>
+
+<pre><code>$user = User::get(1);
+
+$profile = $user-&gt;profile;
+</code></pre>
+
+<p><a id="relations:has_many"></a></p>
+
+<h4>Has many</h4>
+
+<p>We can now add a <code>has many</code> relation to our user model.</p>
+
+<pre><code>public function articles()
+{
+    return $this-&gt;hasMany('\app\models\Article');
+}
+</code></pre>
+
+<p>We can now fetch all the articles that belong to the user like this:</p>
+
+<pre><code>$user = User::get(1);
+
+$articles = $user-&gt;articles;
+</code></pre>
+
+<p><a id="relations:belongs_to"></a></p>
+
+<h4>Belongs to</h4>
+
+<p>The <code>belongs</code> to relation is the opposite of a <code>has one</code> or <code>has many</code> relation.</p>
+
+<p>We can continue to build on the article model and add a <code>belongs</code> to relation. All we need to get this to work is add a foreign key column named <code>user_id</code> to the articles table.</p>
+
+<pre><code>public function user()
+{
+    return $this-&gt;belongsTo('\app\models\User');
+}
+</code></pre>
+
+<p>Fetching the user that owns the article can now be done line this:</p>
+
+<pre><code>$article = Article::get(1);
+
+$user = $article-&gt;user;
+</code></pre>
+
+<p><a id="relations:many_to_many"></a></p>
+
+<h4>Many to many</h4>
+
+<p>The <code>many to many</code> relation requires a <a href="http://en.wikipedia.org/wiki/Junction_table">junction table</a> between the two related tables. The name of the junction table should be the names of the two tables you want to join in alphabetical order separated by an underscore.</p>
+
+<p><img src="../../assets/img/junctionTable.png" alt="junction table" /></p>
+
+<p>The relation would then look like this in the user model:</p>
+
+<pre><code>public function groups()
+{
+    return $this-&gt;manyToMany('\app\models\Group');
+}
+</code></pre>
+
+<p>And like this in the group model:</p>
+
+<pre><code>public function users()
+{
+    return $this-&gt;manyToMany('\app\models\User');
+}
+</code></pre>
+
+<p>This is how you would use the relations:</p>
+
+<pre><code>// Fetch all the groups that the user belongs to
+
+$user = User::get(1);
+
+$groups = $user-&gt;groups;
+
+// Fetch all the users that are in the group
+
+$group = Group::get(1);
+
+$users = $group-&gt;users;
+</code></pre>
+
+<p><a id="relations:relation_criteria"></a></p>
+
+<h4>Relation criteria</h4>
+
+<p>The ORM is built on top of the <a href="databases_query-builder.html">query builder</a> so you can add query criteria to your relations.</p>
+
+<pre><code>public function articles()
+{
+    return $this-&gt;hasMany('\app\models\Article')-&gt;orderBy('title', 'asc');
+}
+</code></pre>
+
+<p>They can be in the relation definition itself or you can add them when you're accessing the related records.</p>
+
+<pre><code>$articles = $user-&gt;articles()-&gt;orderBy('title', 'asc')-&gt;all();
+</code></pre>
+
+<p><a id="relations:creating_related_records"></a></p>
+
+<h4>Creating related records</h4>
+
+<p>The ORM lets you create related records without having to worry about remembering to set the right foreign key value.</p>
+
+<pre><code>$user = User::get(1);
+
+$article = new Article();
+
+$article-&gt;title   = 'My article title';
+$article-&gt;content = 'My article content';
+
+$user-&gt;articles()-&gt;create($article);
+</code></pre>
+
+<p>The article will now be saved and the value of the <code>user_id</code> foreign key will automatically be set to the users id. This method works for both <code>has one</code> and <code>has many</code> relations.</p>
+
+<p>The <code>many to many</code> relation is a bit different since it requires a junction table. You'll have to use the <code>link</code> method to create a link between two related records.</p>
+
+<pre><code>$user = User::get(1);
+
+$group = Group::get(1);
+
+$user-&gt;groups()-&gt;link($group);
+
+// This will produce the same result as the example above:
+
+$user = User::get(1);
+
+$group = Group::get(1);
+
+$group-&gt;users()-&gt;link($user);
+</code></pre>
+
+<blockquote>
+  <p>You can also pass the primary key value of the record you want to link instead of the object.</p>
+</blockquote>
+
+<p>The <code>unlink</code> method is used to remove the link between the records:</p>
+
+<pre><code>$user-&gt;groups()-&gt;unlink($group);
+
+// This will produce the same result as the example above:
+
+$group-&gt;users()-&gt;unlink($user);
+</code></pre>
+
+<p><a id="relations:eager_loading"></a></p>
+
+<h4>Eager loading</h4>
+
+<p>Loading related records can sometimes cause the <code>1 + N</code> query problem. This is where eager loading becomes handy.</p>
+
+<pre><code>foreach(Comment::limit(10)-&gt;all() as $comment)
+{
+    $comment-&gt;user-&gt;username;
+}
+</code></pre>
+
+<p>The code above will execute <code>1</code> query to fetch <code>10</code> comments and then <code>1</code> query per iteration to retrieve the user who wrote the comment. This means that it has to execute <code>11</code> queries in total. Using eager loading can solve this problem:</p>
+
+<pre><code>foreach(Comment::including('users')-&gt;limit(10)-&gt;all() as $comment)
+{
+    $comment-&gt;user-&gt;username;
+}
+</code></pre>
+
+<p>The code above will produce the same result as the previous example but it will only execute <code>2</code> queries instead of <code>11</code>.</p>
+
+<p>You can eager load more relations using an array and nested relations using the dot syntax:</p>
+
+<pre><code>$articles = Article::including(['user', 'coments', 'comments.users'])-&gt;limit(10)-&gt;all();
+</code></pre>
+
+<p>You can also define relations to eager load in the model definition using the <code>$including</code> property. This is useful if you know that you're going to need to eager load the relations more often than not.</p>
+
+<pre><code>protected $including = ['user', 'comments', 'comments.user'];
+</code></pre>
+
+<p>You can then disable eager loading of the relations if needed by using the <code>excluding</code> method:</p>
+
+<pre><code>$articles = Article::excluding(['user', 'comments'])-&gt;limit(10)-&gt;all();
+</code></pre>
+
+<p><a id="relations:overriding_naming_conventions"></a></p>
+
+<h4>Overriding naming conventions</h4>
+
+<p>The ORM relations rely on strict naming conventions but they can be overridden using the optional parameters of the relation methods. The first optional parameter lets you set the name of the foreign key. The <code>many to many</code> relation method has two additional parameters that let you set the junction table name and the junction key.</p>
+
+<p>In the example below we are telling the relation to use a foreign key named <code>user</code> instead of the default, which should have been <code>user_id</code>.</p>
+
+<pre><code>public function articles()
+{
+    return $this-&gt;hasMany('\app\models\Article', 'user');
+}
+</code></pre>
+
+<hr />
+
+<p><a id="automatic_typecasting"></a></p>
+
+<h3>Automatic typecasting</h3>
+
+<p>You can configure your model to automatically typecast values on the way in and out of your database. This is done using the <code>$cast</code> property where the array key is the column name and the array value is the type you want to cast the column value to.</p>
+
+<p><a id="automatic_typecasting:scalars"></a></p>
+
+<h4>Scalars</h4>
+
+<pre><code>protected $cast = ['id' =&gt; 'integer', 'published' =&gt; 'boolean'];
+</code></pre>
+
+<p>Valid scalar types are <code>boolean</code>, <code>integer</code>, <code>float</code> and <code>string</code>.</p>
+
+<blockquote>
+  <p>Note that the maximum value for <code>integer</code> is <code>PHP_INT_MAX</code>.</p>
+</blockquote>
+
+<p><a id="automatic_typecasting:datetime"></a></p>
+
+<h4>DateTime</h4>
+
+<p>The ORM and query builder both allow you to save dates as DateTime objects without first having to convert them to the appropriate format. Wouldn't it be nice if you could also automatically retrieve them as DateTime objects when fetching them from the database as well? This is possible thanks to the <code>date</code> typecast.</p>
+
+<pre><code>protected $cast = ['joined_at' =&gt; 'date', 'last_seen' =&gt; 'date'];
+</code></pre>
+
+<p>You'll now be able to treat the <code>joined_at</code> and <code>last_seen</code> values as <a href="getting-started_learn-more_date-and-time.html">DateTime</a> objects.</p>
+
+<pre><code>$user = User::get(1);
+
+$lastSeen = 'The user was last seen on ' . $user-&gt;last_seen-&gt;format('Y-m-d at H:i');
+</code></pre>
+
+<hr />
+
+<p><a id="mutators_and_accessors"></a></p>
+
+<h3>Mutators and accessors</h3>
+
+<p>Mutators and accessors allow you to modify data on the way in and out of the database. Mutators are suffixed with <code>Mutator</code> and accessors and suffixed with <code>Accessor</code>.</p>
+
+<p>The following mutator will encode the value when its assigned.</p>
+
+<pre><code>protected function numbersMutator(array $numbers)
+{
+    return json_encode($numbers);
+}
+</code></pre>
+
+<p>You can assign the value like any normal value and it will be JSON-encoded internally in the model making it possible to store it in the database.</p>
+
+<pre><code>$model-&gt;numbers = [1, 2, 3, 4];
+</code></pre>
+
+<p>And the following accessor will decode the value when accessing it.</p>
+
+<pre><code>protected function numbersAccessor($numbers)
+{
+    return json_decode($numbers)
+}
+</code></pre>
+
+<p>You can now retrieve the value like any normal value and it will automatically be JSON-decoded for you.</p>
+
+<pre><code>$arrayOfNumbers = $model-&gt;numbers;
+</code></pre>
+
+<hr />
+
+<p><a id="scopes"></a></p>
+
+<h3>Scopes</h3>
+
+<p>Scopes allow you to specify commonly used query criteria as methods. All scope methods must be prefixed with the <code>Scope</code> suffix.</p>
+
+<pre><code>public function publishedScope($query)
+{
+    return $query-&gt;where('published', '=', 1);
+}
+
+public function popularAndPublishedScope($query, $count)
+{
+    return $query-&gt;where('published', '=', 1)-&gt;where('views', '&gt;', $count);
+}
+</code></pre>
+
+<p>You can now retrieve published articles like this:</p>
+
+<pre><code>$articles = Article::published()-&gt;all();
+
+$articles = Article::popularAndPublished(1000)-&gt;all();
+</code></pre>
+
+<p>Scopes also work through relations:</p>
+
+<pre><code>$articles = User::get(1)-&gt;articles()-&gt;published()-&gt;all();
+
+$articles = User::get(1)-&gt;articles()-&gt;popularAndPublished(1000)-&gt;all();
+</code></pre>
+
+<hr />
+
+<p><a id="mass_assignment"></a></p>
+
+<h3>Mass assignment</h3>
+
+<p>The ORM allows you to use mass assignment when creating or updating records. This can save you a few lines of code since you don't have to set each value individually but it can open attack vectors in your application if you're not careful.</p>
+
+<pre><code>// Create a new record using mass assignment
+
+User::create($_POST);
+
+// Update an existing record using mass assignment
+
+$article = User::get(1);
+
+$article-&gt;assign($_POST);
+
+$article-&gt;save();
+</code></pre>
+
+<p>The code above might seem like a good idea until a hacker adds an is_admin field to the POST data and gives himself admin privileges.</p>
+
+<p>You can make mass assignment a bit more secure by using the <code>$assignable</code> property and define a whitelist of fields that can be set through mass assignment. But you should really only use this feature when you trust the input data a 100%.</p>
+
+<hr />
+
+<p><a id="read_only_records"></a></p>
+
+<h3>Read-only records</h3>
+
+<p>You can make your records read-only by setting the <code>$readOnly</code> property to TRUE. Doing so will make it impossible to update or delete the records and a <code>ReadOnlyRecordException</code> will be thrown if attempted.</p>
+
+<pre><code>// Load a read-only record
+
+$user = User::get(1);
+
+// Will throw a mako\database\midgard\ReadOnlyRecordException
+
+$user-&gt;delete();
+</code></pre>
+
+<hr />
+
+<p><a id="cloning_records"></a></p>
+
+<h3>Cloning records</h3>
+
+<p>You can clone records using the <code>clone</code> keyword:</p>
+
+<pre><code>$clone = clone User::get(1);
+
+$clone-&gt;save();
+</code></pre>
+
+<p>You can also clone an entire result set:</p>
+
+<pre><code>$clones = clone User::all();
+
+foreach($clones as $clone)
+{
+    $clone-&gt;save();
+}
+</code></pre>
+
+<hr />
+
+<p><a id="array_and_json_representations"></a></p>
+
+<h3>Array and JSON representations</h3>
+
+<p>You can convert an ORM object or result set to an array using the <code>toArray</code> method and to JSON using the <code>toJson</code> method. The ORM objects and result sets will also be converted to JSON when casted to a string.</p>
+
+<pre><code>$json = (string) Article::limit(10)-&gt;all();
+</code></pre>
+
+<p>You can exclude columns from the array and JSON representations by using the <code>$protected</code> property.</p>
+
+<hr />
+
+<p><a id="traits"></a></p>
+
+<h3>Traits</h3>
+
+<p><a id="traits:timestamped"></a></p>
+
+<h4>Timestamped</h4>
+
+<p>You'll often want to track when a record has been created and when it was updated. The <code>TimestampedTrait</code> will do this for you automatically.</p>
+
+<p>The trait requires you to add two DATETIME columns to your database table, <code>created_at</code> and <code>updated_at</code>. You can override the column names using the <code>$createdAtColumn</code> and <code>$updatedAtColumn</code> properties.</p>
+
+<pre><code>class Article extends \mako\database\midgard\ORM
+{
+    use \mako\database\midgard\traits\TimestampedTrait;
+}
+</code></pre>
+
+<p>You can touch the <code>updated_at</code> timestamp without having to modify any other data by using the <code>touch</code> method.</p>
+
+<pre><code>$article = Article::get(1);
+
+$article-&gt;touch();
+</code></pre>
+
+<p>You can also make the ORM touch related records upon saving by listing the relations you want to touch in the <code>$touch</code> property.</p>
+
+<pre><code>protected $touch = ['foo', 'foo.bar']; // Nested relations are also supported
+</code></pre>
+
+<p><a id="traits:optimistic_locking"></a></p>
+
+<h4>Optimistic locking</h4>
+
+<p>When two users are attempting to update the same record simultaneously, one of the updates will likely be overwritten. Optimistic locking can solve this problem.</p>
+
+<p>To enable optimistic locking you need to use <code>OptimisticLockingTrait</code> trait. The database table also needs an integer column named <code>lock_version</code>. The name of the column can be configured using the <code>$lockingColumn</code> property.</p>
+
+<pre><code>class Article extends \mako\database\midgard\ORM
+{
+    use \mako\database\midgard\traits\OptimisticLockingTrait;
+}
+</code></pre>
+
+<p>The second save in the example below will throw a <code>StaleRecordException</code> since the record is now outdated compared to the one stored in the database.</p>
+
+<pre><code>$article1 = Article::get(1);
+$article2 = Article::get(1);
+
+$article1-&gt;title = 'Foo';
+
+$article1-&gt;save();
+
+$article2-&gt;title = 'Bar';
+
+$article2-&gt;save();
+</code></pre>
+
+<p>The <code>reload</code> method can be used to refresh the outdated record.</p>
+
+<pre><code>$article2-&gt;reload();
+</code></pre>
+
+<blockquote>
+  <p>Optimistic locking will also check for stale records when deleting, although not when deleting in bulk.</p>
+</blockquote>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+		</div>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col l6 s12">
+						<h5 class="white-text">Git</h5>
+						<p class="grey-text lighten-4 github"></p>
+						<p>
+							<a href="https://travis-ci.org/mako-framework/framework">
+								<img src="https://travis-ci.org/mako-framework/framework.svg?branch=master" alt="">
+							</a>
+						</p>
+						<p>
+							<a class="waves-effect waves-light btn grey darken-1" href="https://github.com/mako-framework/framework/issues">
+								<span id="open-issues">?</span> Open Issues
+							</a>
+							<a class="waves-effect waves-light btn grey darken-1" href="https://github.com/mako-framework/framework/pulls">
+								<span id="pull-requests">?</span> Pull Requests
+							</a>
+						</p>
+					</div>
+					<div class="col l4 offset-l2 s12">
+						<h5 class="white-text">Links</h5>
+						<ul>
+							<li><a class="grey-text lighten-3" href="../../index.html">Home</a></li>
+							<li><a class="grey-text lighten-3" href="../../changelog.html">Changelog</a></li>
+							<li><a class="grey-text lighten-3" href="../4.html">Documentation</a></li>
+							<li><a class="grey-text lighten-3" href="http://api.makoframework.com/">API</a></li>
+							<li><a class="grey-text lighten-3" href="https://github.com/mako-framework/framework/issues">Issues</a></li>
+							<li><a class="grey-text lighten-3" href="http://forum.makoframework.com/">Community</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					© 2015 Frederic G. Østby - All Rights Reserved
+					<a class="grey-text lighten-4 right" href="https://twitter.com/makoframework">&nbsp;<i class="fa fa-twitter"></i></a>
+					<a class="grey-text lighten-4 right" href="https://github.com/mako-framework">&nbsp;<i class="fa fa-github-alt"></i></a>
+				</div>
+			</div>
+		</footer>
+
+		<a href="#0" class="cd-top">Top</a>
+
+		<script type="text/javascript" src="../../assets/js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../assets/js/materialize.min.js"></script>
+		<script type="text/javascript" src="../../assets/js/timeago.min.js"></script>
+		<script type="text/javascript" src="../../assets/js/mako.js"></script>
+		<script type="text/javascript" src="../../assets/js/prism.js"></script>
+		<script type="text/javascript" src="../../assets/js/backtotop.js"></script>
+
+	</body>
+
+<!-- Mirrored from makoframework.com/docs/4.2/databases:orm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Aug 2015 15:42:54 GMT -->
+</html>

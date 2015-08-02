@@ -1,0 +1,828 @@
+
+
+
+<!--<!DOCTYPE html>-->
+<html>
+	
+<!-- Mirrored from makoframework.com/docs/4.5/routing-and-controllers:request by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Aug 2015 15:42:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+		<title>Documentation - 4.5 - Mako Framework</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="../../assets/img/favicon.ico">
+		<link type="text/css" rel="stylesheet" href="../../assets/css/materialize.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="../../assets/css/font-awesome.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="../../assets/css/animate.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="../../assets/css/mako.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="../../assets/css/backtotop.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="../../assets/css/prism.css"  media="screen,projection"/>
+
+		<script>
+			var mako = {'base_url': 'http://makoframework.com/'};
+		</script>
+
+		<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-19891169-1']);
+		_gaq.push(['_setDomainName', '.makoframework.com']);
+		_gaq.push(['_trackPageview']);
+		(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+		</script>
+
+	</head>
+
+	<body>
+
+		<ul id="source-dropdown" class="dropdown-content nav-dropdown">
+			<li><a href="../../contributing/contributors.html">Contributors</a></li>
+			<li><a href="https://github.com/mako-framework">View on GitHub</a></li>
+		</ul>
+
+		<nav id="nav" class="grey darken-3-5">
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="../../index.html" class="brand-logo"><img src="../../assets/img/logo50.png" alt="Mako"></a>
+					<ul id="nav-mobile" class="right side-nav">
+						<li><a href="../4.html">Documentation</a></li>
+						<li><a href="http://api.makoframework.com/">API</a></li>
+						<li>
+							<a class="dropdown-button" href="#!" data-activates="source-dropdown">Source<i class="mdi-navigation-arrow-drop-down right"></i></a>
+						</li>
+						<li><a href="https://github.com/mako-framework/framework/issues">Issues</a></li>
+						<li><a href="http://forum.makoframework.com/">Community</a></li>
+						<li><a href="#!" id="toggle-search"><i class="large mdi-action-search"></i></a></li>
+					</ul>
+					<a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
+				</div>
+			</div>
+		</nav>
+
+		<div class="row white-text grey darken-3" id="search">
+
+			<div class="container">
+				<form action="https://www.google.com/search" method="get">
+					<input class="form-control" type="text" name="q" placeholder="Search ...">
+					<input type="hidden" name="as_sitesearch" value="makoframework.com">
+				</form>
+			</div>
+
+		</div>
+
+		<div id="content">
+
+			
+		<div class="row white z-depth-1" id="tab-wrapper">
+			<div class="container">
+				<div class="row tabs">
+											<div class="col s12 m3 active"><p><a href="../4.html">4.5</a></p></div>
+											<div class="col s12 m3 "><p><a href="../4-2.html">4.4</a></p></div>
+											<div class="col s12 m3 "><p><a href="../4-3.html">4.3</a></p></div>
+										<div class="col s12 m3 ">
+						<select id="legacy-docs">
+							<option value="" disabled selected>Older</option>
+															<option value="http://makoframework.com/docs/4.2">4.2</option>
+															<option value="http://makoframework.com/docs/4.1">4.1</option>
+															<option value="http://makoframework.com/docs/4.0">4.0</option>
+															<option value="http://makoframework.com/docs/3.6">3.6</option>
+													</select>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+			
+	<div class="container">
+
+		<button class="grey lighten-2 waves-effect waves-light btn-flat" type="submit" name="action" id="toggle-menu">Open Menu</button>
+
+		<div class="row content">
+			<div class="col l3 m12 s12 left-menu">
+
+				<div id="left-nav">
+				
+					
+							<div class="menu-header">Getting started</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="getting-started_installation.html">
+											Installation										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_configuration.html">
+											Configuration										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_dependency-injection.html">
+											Dependency injection										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_error-handling.html">
+											Error handling										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_constants.html">
+											Constants										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_coding-standards.html">
+											Coding standards										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_upgrading.html">
+											Upgrading										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Routing and controllers</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="routing-and-controllers_routing.html">
+											Routing										</a>
+									</p>
+
+								
+									<p>
+										<a  href="routing-and-controllers_controllers.html">
+											Controllers										</a>
+									</p>
+
+								
+									<p>
+										<a  class="active" href="routing-and-controllers_request.html">
+											Request										</a>
+									</p>
+
+								
+									<p>
+										<a  href="routing-and-controllers_response.html">
+											Response										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Command line</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="command-line_basics.html">
+											Basics										</a>
+									</p>
+
+								
+									<p>
+										<a  href="command-line_custom-commands.html">
+											Custom commands										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Databases (SQL)</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="databases-sql_basics.html">
+											Basics										</a>
+									</p>
+
+								
+									<p>
+										<a  href="databases-sql_query-builder.html">
+											Query builder										</a>
+									</p>
+
+								
+									<p>
+										<a  href="databases-sql_orm.html">
+											Orm										</a>
+									</p>
+
+								
+									<p>
+										<a  href="databases-sql_migrations.html">
+											Migrations										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Databases (NoSQL)</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="databases-nosql_redis.html">
+											Redis										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Security</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="security_authentication.html">
+											Authentication										</a>
+									</p>
+
+								
+									<p>
+										<a  href="security_password-hashing.html">
+											Password hashing										</a>
+									</p>
+
+								
+									<p>
+										<a  href="security_encryption-and-signing.html">
+											Encryption and signing										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Packages</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="packages_packages.html">
+											Packages										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Learn more</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="learn-more_array-helper.html">
+											Array helper										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_caching.html">
+											Caching										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_command-bus.html">
+											Command bus										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_date-and-time.html">
+											Date and time										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_events.html">
+											Events										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_file-system.html">
+											File system										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_html-helper.html">
+											Html helper										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_humanizer.html">
+											Humanizer										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_image-manipulation.html">
+											Image manipulation										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_internationalization.html">
+											Internationalization										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_logging.html">
+											Logging										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_number-helper.html">
+											Number helper										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_pagination.html">
+											Pagination										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_sessions.html">
+											Sessions										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_string-helper.html">
+											String helper										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_url-builder.html">
+											Url builder										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_uuid-helper.html">
+											Uuid helper										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_validation.html">
+											Validation										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_views.html">
+											Views										</a>
+									</p>
+
+								
+							</div>
+
+									</div>
+
+			</div>
+			<div class="col l9 m12 s12">
+				<div class="page-content">
+					<h1>Request</h1>
+
+<hr />
+
+<ul>
+<li><a href="#accessing_data">Accessing data</a></li>
+<li><a href="#reading_cookies">Reading cookies</a></li>
+<li><a href="#request_information">Request information</a></li>
+</ul>
+
+<hr />
+
+<p>The request class provides an object oriented interface to global variables such as <code>$_GET</code>, <code>$_POST</code>, <code>$_FILES</code>, <code>$_COOKIE</code> and <code>$_SERVER</code> as well as easy access to request data and other useful request information.</p>
+
+<p>An instance of the request class is always avaiable in all controller classes. It is also easily made avaiable in <a href="routing-and-controllers_routing.html#basics">route closures</a>.</p>
+
+<hr />
+
+<p><a id="accessing_data"></a></p>
+
+<h3>Accessing data</h3>
+
+<p>The <code>get</code> method allows you to access query string data ($_GET).</p>
+
+<pre><code>// Get all query string data (returns an empty array if there is no data)
+
+$all = $this-&gt;request-&gt;get();
+
+// Get data from a specific key (will return NULL if the key doesn't exist)
+
+$foo = $this-&gt;request-&gt;get('foo');
+
+// Get data from a specific key and return FASLE if the key doesn't exist
+
+$foo = $this-&gt;request-&gt;get('foo', false);
+</code></pre>
+
+<p>The <code>post</code> method allows you to access <code>POST</code> data ($_POST).</p>
+
+<pre><code>// Get all POST data (returns an empty array if there is no data)
+
+$all = $this-&gt;request-&gt;post();
+
+// Get data from a specific key (will return NULL if the key doesn't exist)
+
+$foo = $this-&gt;request-&gt;post('foo');
+
+// Get data from a specific key and return FASLE if the key doesn't exist
+
+$foo = $this-&gt;request-&gt;post('foo', false);
+</code></pre>
+
+<p>The <code>put</code> method allows you to access <code>PUT</code> data.</p>
+
+<blockquote>
+  <p>The method expects the request body to be one of the following types; <code>application/x-www-form-urlencoded</code>, <code>text/json</code> or <code>application/json</code>. If you want to access the raw request body then you'll have to use the <code>body</code> method instead.</p>
+</blockquote>
+
+<pre><code>// Get all PUT data (returns an empty array if there is no data)
+
+$all = $this-&gt;request-&gt;put();
+
+// Get data from a specific key (will return NULL if the key doesn't exist)
+
+$foo = $this-&gt;request-&gt;put('foo');
+
+// Get data from a specific key and return FASLE if the key doesn't exist
+
+$foo = $this-&gt;request-&gt;put('foo', false);
+</code></pre>
+
+<p>The <code>patch</code> method allows you to access <code>PATCH</code> data.</p>
+
+<blockquote>
+  <p>The method expects the request body to be one of the following types; <code>application/x-www-form-urlencoded</code>, <code>text/json</code> or <code>application/json</code>. If you want to access the raw request body then you'll have to use the <code>body</code> method instead.</p>
+</blockquote>
+
+<pre><code>// Get all PATCH data (returns an empty array if there is no data)
+
+$all = $this-&gt;request-&gt;patch();
+
+// Get data from a specific key (will return NULL if the key doesn't exist)
+
+$foo = $this-&gt;request-&gt;patch('foo');
+
+// Get data from a specific key and return FASLE if the key doesn't exist
+
+$foo = $this-&gt;request-&gt;patch('foo', false);
+</code></pre>
+
+<p>The <code>delete</code> method allows you to access <code>DELETE</code> data.</p>
+
+<blockquote>
+  <p>The method expects the request body to be one of the following types; <code>application/x-www-form-urlencoded</code>, <code>text/json</code> or <code>application/json</code>. If you want to access the raw request body then you'll have to use the <code>body</code> method instead.</p>
+</blockquote>
+
+<pre><code>// Get all DELETE data (returns an empty array if there is no data)
+
+$all = $this-&gt;request-&gt;delete();
+
+// Get data from a specific key (will return NULL if the key doesn't exist)
+
+$foo = $this-&gt;request-&gt;delete('foo');
+
+// Get data from a specific key and return FASLE if the key doesn't exist
+
+$foo = $this-&gt;request-&gt;delete('foo', false);
+</code></pre>
+
+<p>The <code>body</code> method allows you to access the raw request body. This is useful if you know that it's not <code>application/x-www-form-urlencoded</code> or <code>json</code> data.</p>
+
+<pre><code>$body = $this-&gt;request-&gt;body();
+</code></pre>
+
+<p>The <code>data</code> method allows you to access data from the current request method.</p>
+
+<pre><code>// Get all request data (returns an empty array if there is no data)
+
+$all = $this-&gt;request-&gt;data();
+
+// Get data from a specific key (will return NULL if the key doesn't exist)
+
+$foo = $this-&gt;request-&gt;data('foo');
+
+// Get data from a specific key and return FASLE if the key doesn't exist
+
+$foo = $this-&gt;request-&gt;data('foo', false);
+</code></pre>
+
+<p>The <code>has</code> method lets you check if a data key exist.</p>
+
+<pre><code>$exists = $this-&gt;request-&gt;has('foo');
+</code></pre>
+
+<p>The <code>whitelisted</code> methods returns all request data where keys not in the whitelist have been removed.</p>
+
+<pre><code>// Returns input data where everything except 'foo' and 'bar' keys have been removed
+
+$whitelisted = $this-&gt;request-&gt;whitelisted(['foo', 'bar']);
+
+// You can also specify default values that will be used if the keys don't exist
+
+$whitelisted = $this-&gt;request-&gt;whitelisted(['foo', 'bar'], ['foo' =&gt; 'baz', 'bar' =&gt; 'bax']);
+</code></pre>
+
+<p>The <code>blacklisted</code> methods returns all request data where keys in the blacklist have been removed.</p>
+
+<pre><code>// Returns input data where the 'foo' and 'bar' keys have been removed
+
+$blacklisted = $this-&gt;request-&gt;blacklisted(['foo', 'bar']);
+
+// You can also specify default values that will be used if the keys don't exist
+
+$blacklisted = $this-&gt;request-&gt;blacklisted(['foo', 'bar'], ['baz' =&gt; 'foo', 'bax' =&gt; 'bar']);
+</code></pre>
+
+<p>The <code>file</code> method allows you to access file upload data ($_FILES).</p>
+
+<pre><code>// Get all file data (returns an empty array if there is no data)
+
+$all = $this-&gt;request-&gt;file();
+
+// Get data from a specific key (will return NULL if the key doesn't exist)
+
+$foo = $this-&gt;request-&gt;file('myfile.size');
+</code></pre>
+
+<p>The <code>server</code> method lets you access server data ($_SERVER)</p>
+
+<pre><code>// Get all server data (returns an empty array if there is no data)
+
+$all = $this-&gt;request-&gt;server();
+
+// Get data from a specific key (will return NULL if the key doesn't exist)
+
+$foo = $this-&gt;request-&gt;server('SERVER_PORT');
+
+// Get data from a specific key and return '80' if the key doesn't exist
+
+$foo = $this-&gt;request-&gt;server('SERVER_PORT', 80);
+</code></pre>
+
+<hr />
+
+<p><a id="reading_cookies"></a></p>
+
+<h3>Reading cookies</h3>
+
+<p>The <code>cookie</code> method will return the value of the selected cookie.</p>
+
+<pre><code>// Returns the value of the chosen cookie (returns NULL if the cookie doesn't exist)
+
+$value = $this-&gt;request-&gt;cookie('chocolate');
+
+// Return the value of the chosen cookie and return FASLE if the cookie doesn't exist
+
+$value = $this-&gt;request-&gt;cookie('chocolate', false);
+</code></pre>
+
+<p>The <code>signedCookie</code> method will return the value of the selected signed cookie.</p>
+
+<pre><code>// Returns the value of the chosen cookie (returns NULL if the cookie doesn't exist)
+
+$value = $this-&gt;request-&gt;signedCookie('chocolate');
+
+// Return the value of the chosen cookie and return FASLE if the cookie doesn't exist
+
+$value = $this-&gt;request-&gt;signedCookie('chocolate', false);
+</code></pre>
+
+<blockquote>
+  <p>The benefit of using signed cookies over regular cookies is that their values can not be tampered with on the client site.</p>
+</blockquote>
+
+<p>Setting regular and signed cookies is done using the <a href="routing-and-controllers_response.html">response class</a>.</p>
+
+<hr />
+
+<p><a id="request_information"></a></p>
+
+<h3>Request information</h3>
+
+<p>The <code>header</code> method returns the value of the chosen request header.</p>
+
+<pre><code>// Returns the value of the chosen header (returns NULL if the header doesn't exist)
+
+$value = $this-&gt;request-&gt;header('content-type');
+
+// Returns the value of the chosen header and returns 'text/plain' if the header doesn't exist
+
+$value = $this-&gt;request-&gt;header('content-type', 'text/plain');
+</code></pre>
+
+<p>The <code>referer</code> method returns the address that refered the client to the current resource. NULL is returned if there is no referer.</p>
+
+<pre><code>// Returns the referer if there is one and NULL if not
+
+$referer = $this-&gt;request-&gt;referer();
+
+// Returns the referer if there is one and the URL to the 'home' route if there isn't one
+
+$referer = $this-&gt;request-&gt;referer($this-&gt;urlBuilder-&gt;toRoute('home'));
+</code></pre>
+
+<p>The <code>acceptableContentTypes</code> returns an array of acceptable content types in descending order of preference.</p>
+
+<pre><code>$acceptableContentTypes = $this-&gt;request-&gt;acceptableContentTypes();
+</code></pre>
+
+<p>The <code>acceptableLanguages</code> returns an array of acceptable languages in descending order of preference.</p>
+
+<pre><code>$acceptableLanguages = $this-&gt;request-&gt;acceptableLanguages();
+</code></pre>
+
+<p>The <code>acceptableCharsets</code> returns an array of acceptable character sets in descending order of preference.</p>
+
+<pre><code>$acceptableCharsets = $this-&gt;request-&gt;acceptableCharsets();
+</code></pre>
+
+<p>The <code>acceptableEncodings</code> returns an array of acceptable encodings sets in descending order of preference.</p>
+
+<pre><code>$acceptableEncodings = $this-&gt;request-&gt;acceptableEncodings();
+</code></pre>
+
+<p>The <code>ip</code> method returns IP of the client that made the request.</p>
+
+<pre><code>$ip = $this-&gt;request-&gt;ip();
+</code></pre>
+
+<p>The <code>isAjax</code> method returns TRUE if the request was made using AJAX and FALSE if not.</p>
+
+<pre><code>$isAjax = $this-&gt;request-&gt;isAjax();
+</code></pre>
+
+<p>The <code>isSecure</code> method returns TRUE if the request was made using HTTPS and FALSE if not.</p>
+
+<pre><code>$isSecure = $this-&gt;request-&gt;isSecure();
+</code></pre>
+
+<p>The <code>isSafe</code> method returns TRUE if the request method used is considered safe and FALSE if not. The methods that are considered safe are <code>GET</code> and <code>HEAD</code>.</p>
+
+<pre><code>$isSafe = $this-&gt;request-&gt;isSafe();
+</code></pre>
+
+<p>The <code>baseURL</code> method returns the base URL of the request.</p>
+
+<pre><code>// A request to 'http://example.org/foo/bar' will return 'http://example.org'
+
+$baseURL = $this-&gt;request-&gt;baseURL();
+</code></pre>
+
+<p>The <code>path</code> method will return the request path.</p>
+
+<pre><code>// A request to 'http://example.org/foo/bar' will return '/foo/bar'
+
+$path = $this-&gt;request-&gt;path();
+</code></pre>
+
+<p>The <code>language</code> method returns the request language (see the <code>app/config/application.php</code> config file for more information).</p>
+
+<pre><code>$language = $this-&gt;request-&gt;language();
+</code></pre>
+
+<p>The <code>languagePrefix</code> method returns the language prefix (see the <code>app/config/application.php</code> config file for more information).</p>
+
+<pre><code>$languagePrefix = $this-&gt;request-&gt;languagePrefix();
+</code></pre>
+
+<p>The <code>method</code> method returns the request method used to access the resource.</p>
+
+<pre><code>$method = $this-&gt;request-&gt;method();
+</code></pre>
+
+<p>The <code>realMethod</code> method returns the real request method used to access the resource.</p>
+
+<pre><code>$method = $this-&gt;request-&gt;realMethod();
+</code></pre>
+
+<p>The <code>isFaked</code> method returns TRUE if the request method method has been faked and FALSE if not.</p>
+
+<pre><code>$isFaked = $this-&gt;request-&gt;isFaked();
+</code></pre>
+
+<p>The <code>username</code> method returns a basic HTTP authentication username of NULL if it isn't set.</p>
+
+<pre><code>$username = $this-&gt;request-&gt;username();
+</code></pre>
+
+<p>The <code>password</code> method returns a basic HTTP authentication password of NULL if it isn't set.</p>
+
+<pre><code>$password = $this-&gt;request-&gt;password();
+</code></pre>
+
+<p>The <code>getRoute</code> method returns the route that matched the request.</p>
+
+<pre><code>$route = $this-&gt;request-&gt;getRoute();
+</code></pre>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+		</div>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col l6 s12">
+						<h5 class="white-text">Git</h5>
+						<p class="grey-text lighten-4 github"></p>
+						<p>
+							<a href="https://travis-ci.org/mako-framework/framework">
+								<img src="https://travis-ci.org/mako-framework/framework.svg?branch=master" alt="">
+							</a>
+						</p>
+						<p>
+							<a class="waves-effect waves-light btn grey darken-1" href="https://github.com/mako-framework/framework/issues">
+								<span id="open-issues">?</span> Open Issues
+							</a>
+							<a class="waves-effect waves-light btn grey darken-1" href="https://github.com/mako-framework/framework/pulls">
+								<span id="pull-requests">?</span> Pull Requests
+							</a>
+						</p>
+					</div>
+					<div class="col l4 offset-l2 s12">
+						<h5 class="white-text">Links</h5>
+						<ul>
+							<li><a class="grey-text lighten-3" href="../../index.html">Home</a></li>
+							<li><a class="grey-text lighten-3" href="../../changelog.html">Changelog</a></li>
+							<li><a class="grey-text lighten-3" href="../4.html">Documentation</a></li>
+							<li><a class="grey-text lighten-3" href="http://api.makoframework.com/">API</a></li>
+							<li><a class="grey-text lighten-3" href="https://github.com/mako-framework/framework/issues">Issues</a></li>
+							<li><a class="grey-text lighten-3" href="http://forum.makoframework.com/">Community</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					© 2015 Frederic G. Østby - All Rights Reserved
+					<a class="grey-text lighten-4 right" href="https://twitter.com/makoframework">&nbsp;<i class="fa fa-twitter"></i></a>
+					<a class="grey-text lighten-4 right" href="https://github.com/mako-framework">&nbsp;<i class="fa fa-github-alt"></i></a>
+				</div>
+			</div>
+		</footer>
+
+		<a href="#0" class="cd-top">Top</a>
+
+		<script type="text/javascript" src="../../assets/js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../assets/js/materialize.min.js"></script>
+		<script type="text/javascript" src="../../assets/js/timeago.min.js"></script>
+		<script type="text/javascript" src="../../assets/js/mako.js"></script>
+		<script type="text/javascript" src="../../assets/js/prism.js"></script>
+		<script type="text/javascript" src="../../assets/js/backtotop.js"></script>
+
+	</body>
+
+<!-- Mirrored from makoframework.com/docs/4.5/routing-and-controllers:request by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Aug 2015 15:42:09 GMT -->
+</html>

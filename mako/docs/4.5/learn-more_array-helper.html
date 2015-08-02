@@ -1,0 +1,556 @@
+
+
+
+<!--<!DOCTYPE html>-->
+<html>
+	
+<!-- Mirrored from makoframework.com/docs/4.5/learn-more:array-helper by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Aug 2015 15:42:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+		<title>Documentation - 4.5 - Mako Framework</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="../../assets/img/favicon.ico">
+		<link type="text/css" rel="stylesheet" href="../../assets/css/materialize.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="../../assets/css/font-awesome.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="../../assets/css/animate.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="../../assets/css/mako.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="../../assets/css/backtotop.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="../../assets/css/prism.css"  media="screen,projection"/>
+
+		<script>
+			var mako = {'base_url': 'http://makoframework.com/'};
+		</script>
+
+		<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-19891169-1']);
+		_gaq.push(['_setDomainName', '.makoframework.com']);
+		_gaq.push(['_trackPageview']);
+		(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+		</script>
+
+	</head>
+
+	<body>
+
+		<ul id="source-dropdown" class="dropdown-content nav-dropdown">
+			<li><a href="../../contributing/contributors.html">Contributors</a></li>
+			<li><a href="https://github.com/mako-framework">View on GitHub</a></li>
+		</ul>
+
+		<nav id="nav" class="grey darken-3-5">
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="../../index.html" class="brand-logo"><img src="../../assets/img/logo50.png" alt="Mako"></a>
+					<ul id="nav-mobile" class="right side-nav">
+						<li><a href="../4.html">Documentation</a></li>
+						<li><a href="http://api.makoframework.com/">API</a></li>
+						<li>
+							<a class="dropdown-button" href="#!" data-activates="source-dropdown">Source<i class="mdi-navigation-arrow-drop-down right"></i></a>
+						</li>
+						<li><a href="https://github.com/mako-framework/framework/issues">Issues</a></li>
+						<li><a href="http://forum.makoframework.com/">Community</a></li>
+						<li><a href="#!" id="toggle-search"><i class="large mdi-action-search"></i></a></li>
+					</ul>
+					<a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
+				</div>
+			</div>
+		</nav>
+
+		<div class="row white-text grey darken-3" id="search">
+
+			<div class="container">
+				<form action="https://www.google.com/search" method="get">
+					<input class="form-control" type="text" name="q" placeholder="Search ...">
+					<input type="hidden" name="as_sitesearch" value="makoframework.com">
+				</form>
+			</div>
+
+		</div>
+
+		<div id="content">
+
+			
+		<div class="row white z-depth-1" id="tab-wrapper">
+			<div class="container">
+				<div class="row tabs">
+											<div class="col s12 m3 active"><p><a href="../4.html">4.5</a></p></div>
+											<div class="col s12 m3 "><p><a href="../4-2.html">4.4</a></p></div>
+											<div class="col s12 m3 "><p><a href="../4-3.html">4.3</a></p></div>
+										<div class="col s12 m3 ">
+						<select id="legacy-docs">
+							<option value="" disabled selected>Older</option>
+															<option value="http://makoframework.com/docs/4.2">4.2</option>
+															<option value="http://makoframework.com/docs/4.1">4.1</option>
+															<option value="http://makoframework.com/docs/4.0">4.0</option>
+															<option value="http://makoframework.com/docs/3.6">3.6</option>
+													</select>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+			
+	<div class="container">
+
+		<button class="grey lighten-2 waves-effect waves-light btn-flat" type="submit" name="action" id="toggle-menu">Open Menu</button>
+
+		<div class="row content">
+			<div class="col l3 m12 s12 left-menu">
+
+				<div id="left-nav">
+				
+					
+							<div class="menu-header">Getting started</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="getting-started_installation.html">
+											Installation										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_configuration.html">
+											Configuration										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_dependency-injection.html">
+											Dependency injection										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_error-handling.html">
+											Error handling										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_constants.html">
+											Constants										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_coding-standards.html">
+											Coding standards										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_upgrading.html">
+											Upgrading										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Routing and controllers</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="routing-and-controllers_routing.html">
+											Routing										</a>
+									</p>
+
+								
+									<p>
+										<a  href="routing-and-controllers_controllers.html">
+											Controllers										</a>
+									</p>
+
+								
+									<p>
+										<a  href="routing-and-controllers_request.html">
+											Request										</a>
+									</p>
+
+								
+									<p>
+										<a  href="routing-and-controllers_response.html">
+											Response										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Command line</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="command-line_basics.html">
+											Basics										</a>
+									</p>
+
+								
+									<p>
+										<a  href="command-line_custom-commands.html">
+											Custom commands										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Databases (SQL)</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="databases-sql_basics.html">
+											Basics										</a>
+									</p>
+
+								
+									<p>
+										<a  href="databases-sql_query-builder.html">
+											Query builder										</a>
+									</p>
+
+								
+									<p>
+										<a  href="databases-sql_orm.html">
+											Orm										</a>
+									</p>
+
+								
+									<p>
+										<a  href="databases-sql_migrations.html">
+											Migrations										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Databases (NoSQL)</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="databases-nosql_redis.html">
+											Redis										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Security</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="security_authentication.html">
+											Authentication										</a>
+									</p>
+
+								
+									<p>
+										<a  href="security_password-hashing.html">
+											Password hashing										</a>
+									</p>
+
+								
+									<p>
+										<a  href="security_encryption-and-signing.html">
+											Encryption and signing										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Packages</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="packages_packages.html">
+											Packages										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Learn more</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  class="active" href="learn-more_array-helper.html">
+											Array helper										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_caching.html">
+											Caching										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_command-bus.html">
+											Command bus										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_date-and-time.html">
+											Date and time										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_events.html">
+											Events										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_file-system.html">
+											File system										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_html-helper.html">
+											Html helper										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_humanizer.html">
+											Humanizer										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_image-manipulation.html">
+											Image manipulation										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_internationalization.html">
+											Internationalization										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_logging.html">
+											Logging										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_number-helper.html">
+											Number helper										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_pagination.html">
+											Pagination										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_sessions.html">
+											Sessions										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_string-helper.html">
+											String helper										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_url-builder.html">
+											Url builder										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_uuid-helper.html">
+											Uuid helper										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_validation.html">
+											Validation										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_views.html">
+											Views										</a>
+									</p>
+
+								
+							</div>
+
+									</div>
+
+			</div>
+			<div class="col l9 m12 s12">
+				<div class="page-content">
+					<h1>Array helper</h1>
+
+<hr />
+
+<ul>
+<li><a href="#usage">Usage</a></li>
+</ul>
+
+<hr />
+
+<p>The array helper contains methods that can be useful when working with arrays.</p>
+
+<hr />
+
+<p><a id="usage"></a></p>
+
+<h3>Usage</h3>
+
+<p>The <code>get</code> method returns a value from an array using "dot notation".</p>
+
+<pre><code>$array = ['foo' =&gt; ['bar' =&gt; 'baz']];
+
+$bar = Arr::get($array, 'foo.bar');
+
+// You can also specify a default value if the key doesn't exist
+
+$baz = Arr::get($array, 'foo.baz', 'nope');
+</code></pre>
+
+<p>The <code>set</code> method sets an array value using "dot notation".</p>
+
+<pre><code>Arr::set($array, 'foo.baz', 'hello world');
+</code></pre>
+
+<p>The <code>delete</code> method deletes an array value using "dot notation".</p>
+
+<pre><code>Arr::delete($array, 'foo.bar');
+</code></pre>
+
+<p>The <code>random</code> method returns a random array value.</p>
+
+<pre><code>Arr::random(['green', 'blue', 'red', 'orange']);
+</code></pre>
+
+<p>The <code>isAssoc</code> method returns TRUE if the array is associative and FALSE if not.</p>
+
+<pre><code>// $assoc will be set to FALSE
+
+$assoc = Arr::isAssoc([1, 2, 3]);
+
+// $assoc will be set to TRUE
+
+$assoc = Arr::isAssoc(['one' =&gt; 1, 'two' =&gt; 2, 'three' =&gt; 3]);
+</code></pre>
+
+<p>The <code>pluck</code> method returns the values from a single column of the input array, identified by the key.</p>
+
+<pre><code>$fruits = 
+[
+    ['name' =&gt; 'apple', 'color' =&gt; 'green'],
+    ['name' =&gt; 'banana', 'color' =&gt; 'yellow'];
+];
+
+$colors = Arr::pluck($fruits, 'color');
+</code></pre>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+		</div>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col l6 s12">
+						<h5 class="white-text">Git</h5>
+						<p class="grey-text lighten-4 github"></p>
+						<p>
+							<a href="https://travis-ci.org/mako-framework/framework">
+								<img src="https://travis-ci.org/mako-framework/framework.svg?branch=master" alt="">
+							</a>
+						</p>
+						<p>
+							<a class="waves-effect waves-light btn grey darken-1" href="https://github.com/mako-framework/framework/issues">
+								<span id="open-issues">?</span> Open Issues
+							</a>
+							<a class="waves-effect waves-light btn grey darken-1" href="https://github.com/mako-framework/framework/pulls">
+								<span id="pull-requests">?</span> Pull Requests
+							</a>
+						</p>
+					</div>
+					<div class="col l4 offset-l2 s12">
+						<h5 class="white-text">Links</h5>
+						<ul>
+							<li><a class="grey-text lighten-3" href="../../index.html">Home</a></li>
+							<li><a class="grey-text lighten-3" href="../../changelog.html">Changelog</a></li>
+							<li><a class="grey-text lighten-3" href="../4.html">Documentation</a></li>
+							<li><a class="grey-text lighten-3" href="http://api.makoframework.com/">API</a></li>
+							<li><a class="grey-text lighten-3" href="https://github.com/mako-framework/framework/issues">Issues</a></li>
+							<li><a class="grey-text lighten-3" href="http://forum.makoframework.com/">Community</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					© 2015 Frederic G. Østby - All Rights Reserved
+					<a class="grey-text lighten-4 right" href="https://twitter.com/makoframework">&nbsp;<i class="fa fa-twitter"></i></a>
+					<a class="grey-text lighten-4 right" href="https://github.com/mako-framework">&nbsp;<i class="fa fa-github-alt"></i></a>
+				</div>
+			</div>
+		</footer>
+
+		<a href="#0" class="cd-top">Top</a>
+
+		<script type="text/javascript" src="../../assets/js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../assets/js/materialize.min.js"></script>
+		<script type="text/javascript" src="../../assets/js/timeago.min.js"></script>
+		<script type="text/javascript" src="../../assets/js/mako.js"></script>
+		<script type="text/javascript" src="../../assets/js/prism.js"></script>
+		<script type="text/javascript" src="../../assets/js/backtotop.js"></script>
+
+	</body>
+
+<!-- Mirrored from makoframework.com/docs/4.5/learn-more:array-helper by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Aug 2015 15:42:10 GMT -->
+</html>

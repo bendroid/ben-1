@@ -1,0 +1,767 @@
+
+
+
+<!--<!DOCTYPE html>-->
+<html>
+	
+<!-- Mirrored from makoframework.com/docs/4.2/routing-and-controllers:response by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Aug 2015 15:42:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+		<title>Documentation - 4.2 - Mako Framework</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="../../assets/img/favicon.ico">
+		<link type="text/css" rel="stylesheet" href="../../assets/css/materialize.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="../../assets/css/font-awesome.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="../../assets/css/animate.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="../../assets/css/mako.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="../../assets/css/backtotop.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="../../assets/css/prism.css"  media="screen,projection"/>
+
+		<script>
+			var mako = {'base_url': 'http://makoframework.com/'};
+		</script>
+
+		<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-19891169-1']);
+		_gaq.push(['_setDomainName', '.makoframework.com']);
+		_gaq.push(['_trackPageview']);
+		(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+		</script>
+
+	</head>
+
+	<body>
+
+		<ul id="source-dropdown" class="dropdown-content nav-dropdown">
+			<li><a href="../../contributing/contributors.html">Contributors</a></li>
+			<li><a href="https://github.com/mako-framework">View on GitHub</a></li>
+		</ul>
+
+		<nav id="nav" class="grey darken-3-5">
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="../../index.html" class="brand-logo"><img src="../../assets/img/logo50.png" alt="Mako"></a>
+					<ul id="nav-mobile" class="right side-nav">
+						<li><a href="../4.html">Documentation</a></li>
+						<li><a href="http://api.makoframework.com/">API</a></li>
+						<li>
+							<a class="dropdown-button" href="#!" data-activates="source-dropdown">Source<i class="mdi-navigation-arrow-drop-down right"></i></a>
+						</li>
+						<li><a href="https://github.com/mako-framework/framework/issues">Issues</a></li>
+						<li><a href="http://forum.makoframework.com/">Community</a></li>
+						<li><a href="#!" id="toggle-search"><i class="large mdi-action-search"></i></a></li>
+					</ul>
+					<a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
+				</div>
+			</div>
+		</nav>
+
+		<div class="row white-text grey darken-3" id="search">
+
+			<div class="container">
+				<form action="https://www.google.com/search" method="get">
+					<input class="form-control" type="text" name="q" placeholder="Search ...">
+					<input type="hidden" name="as_sitesearch" value="makoframework.com">
+				</form>
+			</div>
+
+		</div>
+
+		<div id="content">
+
+			
+		<div class="row white z-depth-1" id="tab-wrapper">
+			<div class="container">
+				<div class="row tabs">
+											<div class="col s12 m3 "><p><a href="../4.html">4.5</a></p></div>
+											<div class="col s12 m3 "><p><a href="../4-2.html">4.4</a></p></div>
+											<div class="col s12 m3 "><p><a href="../4-3.html">4.3</a></p></div>
+										<div class="col s12 m3 active">
+						<select id="legacy-docs">
+							<option value="" disabled selected>Older</option>
+															<option value="http://makoframework.com/docs/4.2">4.2</option>
+															<option value="http://makoframework.com/docs/4.1">4.1</option>
+															<option value="http://makoframework.com/docs/4.0">4.0</option>
+															<option value="http://makoframework.com/docs/3.6">3.6</option>
+													</select>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+			
+	<div class="container">
+
+		<button class="grey lighten-2 waves-effect waves-light btn-flat" type="submit" name="action" id="toggle-menu">Open Menu</button>
+
+		<div class="row content">
+			<div class="col l3 m12 s12 left-menu">
+
+				<div id="left-nav">
+				
+					
+							<div class="menu-header">Getting started</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="getting-started_installation.html">
+											Installation										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_configuration.html">
+											Configuration										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_dependency-injection.html">
+											Dependency injection										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_error-handling.html">
+											Error handling										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_constants.html">
+											Constants										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_coding-standards.html">
+											Coding standards										</a>
+									</p>
+
+								
+									<p>
+										<a  href="getting-started_upgrading.html">
+											Upgrading										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Routing and controllers</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="routing-and-controllers_routing.html">
+											Routing										</a>
+									</p>
+
+								
+									<p>
+										<a  href="routing-and-controllers_controllers.html">
+											Controllers										</a>
+									</p>
+
+								
+									<p>
+										<a  href="routing-and-controllers_request.html">
+											Request										</a>
+									</p>
+
+								
+									<p>
+										<a  class="active" href="routing-and-controllers_response.html">
+											Response										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Databases</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="databases_basics.html">
+											Basics										</a>
+									</p>
+
+								
+									<p>
+										<a  href="databases_query-builder.html">
+											Query builder										</a>
+									</p>
+
+								
+									<p>
+										<a  href="databases_orm.html">
+											Orm										</a>
+									</p>
+
+								
+									<p>
+										<a  href="databases_migrations.html">
+											Migrations										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Command line</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="command-line_basics.html">
+											Basics										</a>
+									</p>
+
+								
+									<p>
+										<a  href="command-line_custom-tasks.html">
+											Custom tasks										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Packages</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="packages_packages.html">
+											Packages										</a>
+									</p>
+
+								
+							</div>
+
+					
+							<div class="menu-header">Learn more</div>
+
+							<div class="menu-items">
+
+								
+									<p>
+										<a  href="learn-more_array-helper.html">
+											Array helper										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_authentication.html">
+											Authentication										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_caching.html">
+											Caching										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_date-and-time.html">
+											Date and time										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_encryption-and-signing.html">
+											Encryption and signing										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_events.html">
+											Events										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_file-system.html">
+											File system										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_html-helper.html">
+											Html helper										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_humanizer.html">
+											Humanizer										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_image-manipulation.html">
+											Image manipulation										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_internationalization.html">
+											Internationalization										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_logging.html">
+											Logging										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_number-helper.html">
+											Number helper										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_pagination.html">
+											Pagination										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_password-hashing.html">
+											Password hashing										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_redis-client.html">
+											Redis client										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_sessions.html">
+											Sessions										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_string-helper.html">
+											String helper										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_url-builder.html">
+											Url builder										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_uuid-helper.html">
+											Uuid helper										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_validation.html">
+											Validation										</a>
+									</p>
+
+								
+									<p>
+										<a  href="learn-more_views.html">
+											Views										</a>
+									</p>
+
+								
+							</div>
+
+									</div>
+
+			</div>
+			<div class="col l9 m12 s12">
+				<div class="page-content">
+					<h1>Response</h1>
+
+<hr />
+
+<ul>
+<li><a href="#basics">Basics</a></li>
+<li><a href="#setting_cookies">Setting cookies</a></li>
+<li><a href="#setting_headers">Setting headers</a></li>
+<li><a href="#response_filters">Response filters</a></li>
+<li><a href="#caching_and_compression">Caching and compression</a></li>
+<li><a href="#special_responses">Special responses</a>
+
+<ul>
+<li><a href="#special_responses:redirecting">Redirecting</a></li>
+<li><a href="#special_responses:files">Files</a></li>
+<li><a href="#special_responses:streams">Streams</a></li>
+</ul></li>
+</ul>
+
+<hr />
+
+<p>The response class helps you build a HTTP response.</p>
+
+<p>An instance of the response class is always avaiable in all controller classes. It is also easily made avaiable in <a href="routing-and-controllers_routing.html#basics">route closures</a>.</p>
+
+<hr />
+
+<p><a id="basics"></a></p>
+
+<h3>Basics</h3>
+
+<p>The <code>body</code> method allows you to set the response body. This is not normally needed as the framework automatically sets the response body to the return value of your controller/route action. It can however be useful if you want to alter the response body in an after filter.</p>
+
+<pre><code>public function afterFilter()
+{
+    $this-&gt;response-&gt;body(strtoupper($this-&gt;response-&gt;getBody()));
+}
+</code></pre>
+
+<p>The <code>getBody</code> method returns the response body.</p>
+
+<pre><code>$responseBody = $this-&gt;response-&gt;getBody();
+</code></pre>
+
+<p>The <code>type</code> method lets you define the response type as well as the response charset. The default response type is <code>text/html</code> and the default charset is <code>UTF-8</code>. The default charset is defined in your <code>app\config\application.php</code> config file.</p>
+
+<pre><code>$this-&gt;response-&gt;type('application/json');
+
+// You can also override the default charset
+
+$this-&gt;response-&gt;type('application/json', 'iso-8859-1');
+</code></pre>
+
+<p>The <code>getType</code> method returns the current response type.</p>
+
+<pre><code>$responseType = $this-&gt;response-&gt;getType();
+</code></pre>
+
+<p>The <code>charset</code> method lets you set the response charset. The default charset is <code>UTF-8</code>and it is defined in your <code>app\config\application.php</code> config file.</p>
+
+<pre><code>$this-&gt;response-&gt;charset('iso-8859-1');
+</code></pre>
+
+<p>The <code>getCharset</code> returns the current response charset.</p>
+
+<pre><code>$responseCharset = $this-&gt;response-&gt;getCharset();
+</code></pre>
+
+<p>The <code>status</code> method lets you set the response status.</p>
+
+<pre><code>$this-&gt;response-&gt;status(404); // Sends the 404 "Not Found" header.
+</code></pre>
+
+<p>The <code>getStatus</code> method returns the current status code.</p>
+
+<pre><code>$responseStatus = $this-&gt;response-&gt;getStatus();
+</code></pre>
+
+<p>The <code>back</code> method will redirect the user back to the previous page.</p>
+
+<pre><code>return $this-&gt;response-&gt;back();
+
+// You also specify the status header (default is 302)
+
+return $this-&gt;response-&gt;back(301);
+</code></pre>
+
+<hr />
+
+<p><a id="setting_cookies"></a></p>
+
+<h3>Setting cookies</h3>
+
+<p>The <code>cookie</code> method adds a cookie to the response.</p>
+
+<pre><code>// Sets a cookie that expires when the browser closes
+
+$this-&gt;response-&gt;cookie('name', 'value');
+
+// Sets a cookie that expires after 1 hour
+
+$this-&gt;response-&gt;cookie('name', 'value', 3600);
+
+// You can also set the path, domain, secure and httponly options using the fourth parameter
+
+$this-&gt;response-&gt;cookie('name', 'value', 3600, ['path' =&gt; '/mydir', 'domain' =&gt; '.example.org']);
+</code></pre>
+
+<p>The <code>signedCookie</code> method has the same method signature as the <code>cookie</code> method. The difference is that the cookie will be signed using the application secret defined in the <code>app/config/application.php</code> config file.</p>
+
+<pre><code>$this-&gt;response-&gt;signedCookie('name', 'value');
+</code></pre>
+
+<blockquote>
+  <p>The benefit of using signed cookies over regular cookies is that their values can not be tampered with on the client site.</p>
+</blockquote>
+
+<p>The <code>deleteCookie</code> method deletes a cookie from the browser. It can be used to delete both normal and signed cookies.</p>
+
+<pre><code>$this-&gt;response-&gt;deleteCooke('name');
+
+// You can also set the path, domain, secure and httponly options using the second parameter
+
+$this-&gt;response-&gt;deleteCookie('name', ['path' =&gt; '/mydir', 'domain' =&gt; '.example.org']);
+</code></pre>
+
+<p>The <code>getCookies</code> method returns an array of all the cookies that have been set.</p>
+
+<pre><code>$responseCookies = $this-&gt;response-&gt;getCookies();
+</code></pre>
+
+<p>The <code>clearCookies</code> method will clear all cookies that have been set.</p>
+
+<pre><code>$this-&gt;response-&gt;clearCookies();
+</code></pre>
+
+<hr />
+
+<p><a id="setting_headers"></a></p>
+
+<h3>Setting headers</h3>
+
+<p>The <code>header</code> method adds a header to your response. The first parameter is the header field while the second is the header value.</p>
+
+<pre><code>$this-&gt;response-&gt;header('access-control-allow-origin', '*');
+</code></pre>
+
+<p>The <code>removeHeader</code> method allows you to remove a previously set header from the response.</p>
+
+<pre><code>$this-&gt;response-&gt;removeHeader('access-control-allow-origin');
+</code></pre>
+
+<p>The <code>getHeaders</code> method will return an array of all the response headers that have been set.</p>
+
+<pre><code>$responseHeaders = $this-&gt;response-&gt;getHeaders();
+</code></pre>
+
+<p>The <code>clearHeaders</code> method will clear all response headers that have been set</p>
+
+<pre><code>$this-&gt;response-&gt;clearHeaders();
+</code></pre>
+
+<hr />
+
+<p><a id="response_filters"></a></p>
+
+<h3>Response filters</h3>
+
+<p>The <code>filter</code> methods allows you to add a response filter that the response body will be passed through before being sent to the browser. You can define multiple filters and they will be executed in the order that they were defined.</p>
+
+<pre><code>$this-&gt;response-&gt;filter(function($responseBody)
+{
+    return strtoupper($responseBody);
+});
+</code></pre>
+
+<p>The <code>getFilters</code> method will return an array containing all the defined response filters.</p>
+
+<pre><code>$responseFilters = $this-&gt;response-&gt;getFilters();
+</code></pre>
+
+<p>The <code>clearFilters</code> method will clear all the defined response filters.</p>
+
+<pre><code>$this-&gt;response-&gt;clearFilters();
+</code></pre>
+
+<hr />
+
+<p><a id="caching_and_compression"></a></p>
+
+<h3>Caching and compression</h3>
+
+<p>You can enable <code>ETag</code> caching using the <code>cache</code> method. Doing so can save bandwidth as the response body will only be sent if it has been modified since the last request.</p>
+
+<pre><code>$this-&gt;response-&gt;cache();
+</code></pre>
+
+<p>The <code>disableCaching</code> method disables <code>ETag</code> caching if it has been enabled.</p>
+
+<pre><code>$this-&gt;response-&gt;disableCaching();
+</code></pre>
+
+<p>The <code>compress</code> method enables output compression. This will save you bandwidh in excahge for a slight bump in CPU usage.</p>
+
+<pre><code>$this-&gt;response-&gt;compress();
+</code></pre>
+
+<p>The <code>disableCompression</code> method disables output compression if it has been enabled.</p>
+
+<pre><code>$this-&gt;response-&gt;disableCompression();
+</code></pre>
+
+<hr />
+
+<p><a id="special_responses"></a></p>
+
+<h3>Special responses</h3>
+
+<p><a id="special_responses:redirecting"></a></p>
+
+<h4>Redirecting</h4>
+
+<p>The <code>redirect</code> method returns a redirect response container.</p>
+
+<pre><code>return $this-&gt;response-&gt;redirect($urlBuilder-&gt;toRoute('home'));
+</code></pre>
+
+<p>You can also set the status header (default is 302) by chaining the status method.</p>
+
+<pre><code>return $this-&gt;response-&gt;redirect($urlBuilder-&gt;toRoute())-&gt;status(301);
+</code></pre>
+
+<p><a id="special_responses:files"></a></p>
+
+<h4>Files</h4>
+
+<p>The <code>file</code> method returns a file response container. The file download will be resumable, something that can be very useful when downloading large files.</p>
+
+<pre><code>return $this-&gt;response-&gt;file('/path/to/file.ext');
+</code></pre>
+
+<p>You can set a custom file name, content type, content disposition and a callback to be executed after a completed download using the second parameter.</p>
+
+<pre><code>return $this-&gt;response-&gt;file('/path/to/file.ext', ['file_name' =&gt; 'foo.ext']);
+</code></pre>
+
+<table class="bordered striped">
+<thead>
+<tr>
+  <th>Option key</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>file_name</td>
+  <td>The file name sent to the client</td>
+</tr>
+<tr>
+  <td>disposition</td>
+  <td>Content-disposition (default is attachment)</td>
+</tr>
+<tr>
+  <td>content_type</td>
+  <td>The framework will try to detect the content type for you but you can override it using this option</td>
+</tr>
+<tr>
+  <td>callback</td>
+  <td>Closure that will be executed after a completed download</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+  <p>Note that any errors in the callback will not be displayed as it happens after the output has been sent. You'll have to check your logs for errors.</p>
+</blockquote>
+
+<p><a id="special_responses:streams"></a></p>
+
+<h4>Streams</h4>
+
+<p>The <code>stream</code> method returns a stream response container. They can be usefull when sending large ammounts data as the data will be flushed to the client in chunks, thus minimizing your application memory usage. It also allows you to begin transmitting dynamically-generated content before knowing the total size of the content.</p>
+
+<pre><code>$this-&gt;response-&gt;type('text/plain');
+
+return $this-&gt;response-&gt;stream(function($stream)
+{
+    $stream-&gt;flush('Hello, world!');
+
+    sleep(2);
+
+    $stream-&gt;flush('Hello, world!');
+});
+</code></pre>
+
+<blockquote>
+  <p>This might not work as expected as some webservers and reverse proxies will buffer the output before sending it.</p>
+</blockquote>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+		</div>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col l6 s12">
+						<h5 class="white-text">Git</h5>
+						<p class="grey-text lighten-4 github"></p>
+						<p>
+							<a href="https://travis-ci.org/mako-framework/framework">
+								<img src="https://travis-ci.org/mako-framework/framework.svg?branch=master" alt="">
+							</a>
+						</p>
+						<p>
+							<a class="waves-effect waves-light btn grey darken-1" href="https://github.com/mako-framework/framework/issues">
+								<span id="open-issues">?</span> Open Issues
+							</a>
+							<a class="waves-effect waves-light btn grey darken-1" href="https://github.com/mako-framework/framework/pulls">
+								<span id="pull-requests">?</span> Pull Requests
+							</a>
+						</p>
+					</div>
+					<div class="col l4 offset-l2 s12">
+						<h5 class="white-text">Links</h5>
+						<ul>
+							<li><a class="grey-text lighten-3" href="../../index.html">Home</a></li>
+							<li><a class="grey-text lighten-3" href="../../changelog.html">Changelog</a></li>
+							<li><a class="grey-text lighten-3" href="../4.html">Documentation</a></li>
+							<li><a class="grey-text lighten-3" href="http://api.makoframework.com/">API</a></li>
+							<li><a class="grey-text lighten-3" href="https://github.com/mako-framework/framework/issues">Issues</a></li>
+							<li><a class="grey-text lighten-3" href="http://forum.makoframework.com/">Community</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					© 2015 Frederic G. Østby - All Rights Reserved
+					<a class="grey-text lighten-4 right" href="https://twitter.com/makoframework">&nbsp;<i class="fa fa-twitter"></i></a>
+					<a class="grey-text lighten-4 right" href="https://github.com/mako-framework">&nbsp;<i class="fa fa-github-alt"></i></a>
+				</div>
+			</div>
+		</footer>
+
+		<a href="#0" class="cd-top">Top</a>
+
+		<script type="text/javascript" src="../../assets/js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../assets/js/materialize.min.js"></script>
+		<script type="text/javascript" src="../../assets/js/timeago.min.js"></script>
+		<script type="text/javascript" src="../../assets/js/mako.js"></script>
+		<script type="text/javascript" src="../../assets/js/prism.js"></script>
+		<script type="text/javascript" src="../../assets/js/backtotop.js"></script>
+
+	</body>
+
+<!-- Mirrored from makoframework.com/docs/4.2/routing-and-controllers:response by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Aug 2015 15:42:53 GMT -->
+</html>
