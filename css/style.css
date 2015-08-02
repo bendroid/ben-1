@@ -83,6 +83,11 @@ ul.card-link li {
   width: 64px;
 }
 
+.fixed-action-btn {
+  bottom: 45px;
+  right: 24px;
+}
+
 .side-nav li{
   background-color: #29b6f6;
 }
