@@ -9,6 +9,7 @@
   <!-- CSS  -->
   <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/para.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/cards.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/social.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -16,27 +17,192 @@
   <link href="css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-<div ng-controller="mainCtrl">
-    <div class="row">
+
+<div id="staggered-test">
+<div class="container">
+    <div class="row side">
         <div class="s10 offset-s1 col">
-            <h3>Collapsible Accordion List</h3>
+            <h3>Projects</h3>
             <h5>MaterializeCSS + AngularJS</h5>
 
             <ul class="collapsible collapsible-accordion" data-collapsible="accordion">
-                <li ng-repeat="u in users">
-                    <div class="collapsible-header blue white-text"  ng-class="($index==1) ? 'active' : ''">
-                        {{u.user.username}}
+                <li>
+                    <div class="collapsible-header blue white-text">
+                        <h5 class="header">Project 1: <small>Build a Portfolio Site</small></h5>
                     </div>
                     <div class="collapsible-body blue lighten-3">
                         <div class="m12 col">
                             <div class="card">
                                 <div class="card-content row">
                                     <div class="s12 l3 col">
-                                        <img src="{{u.user.picture.medium}}" class="align-right circle">
+                                        <img src="img/sliver.jpg" class="align-right list-image">
                                     </div>
                                     <div class="s12 l9 col">
-                                        <h4>{{u.user.name.first}}</h4>
-                                        <label>Email</label> {{u.user.email}} <br>
+                                        <h4>Build a Portfolio Site</h4>
+                                        
+										<p>
+											For now this is just my template for the future projects I will be creating while completing my <a href="https://udacity.com" target="blank">Udacity</a> Nanodegree. This portfolio was built using the <a href="http://getbootstrap.com" target="blank">Bootstrap</a> framework and <a href="http://fontawesome.io" target="blank">Font Awesome</a>. I've added some additional customizations too! My main focus is on mobility. This page will be endlessly modified and updated as I learn more throughout this program. Please don't consider this a "finished" product at this point. Take a look at my <a href="#projects">projects</a> below.
+										</p>
+											<div class="card-action">
+												<ul class="social-network social-circle social-card">
+													<li><a href="https://github.com/bendroid/" target="_blank" class="z-depth-2 icoGithub" title="Github"><i class="fa fa-github"></i></a></li>
+												</ul>
+											</div><!-- ./card action -->
+                                        <label>Password</label> {{u.user.password}} <br>
+                                        <label>Phone</label> {{u.user.phone}} <br>
+                                        <label>Location</label> {{u.user.location.city}}, {{u.user.location.state}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				<li>
+                    <div class="collapsible-header blue white-text">
+                        <h5 class="header">Project 2: <small>Online Resume</small></h5>
+                    </div>
+                    <div class="collapsible-body blue lighten-3">
+                        <div class="m12 col">
+                            <div class="card">
+                                <div class="card-content row">
+                                    <div class="s12 l3 col">
+                                        <img src="img/sm/ben-sm.png" class="align-right list-image">
+                                    </div>
+                                    <div class="s12 l9 col">
+                                        <h4>Build a Portfolio Site</h4>
+                                        
+										<p>
+											For now this is just my template for the future projects I will be creating while completing my <a href="https://udacity.com" target="blank">Udacity</a> Nanodegree. This portfolio was built using the <a href="http://getbootstrap.com" target="blank">Bootstrap</a> framework and <a href="http://fontawesome.io" target="blank">Font Awesome</a>. I've added some additional customizations too! My main focus is on mobility. This page will be endlessly modified and updated as I learn more throughout this program. Please don't consider this a "finished" product at this point. Take a look at my <a href="#projects">projects</a> below.
+										</p>
+											<div class="card-action">
+												<ul class="social-network social-circle social-card">
+													<li><a href="https://github.com/bendroid/" target="_blank" class="z-depth-2 icoGithub" title="Github"><i class="fa fa-github"></i></a></li>
+												</ul>
+											</div><!-- ./card action -->
+                                        <label>Password</label> {{u.user.password}} <br>
+                                        <label>Phone</label> {{u.user.phone}} <br>
+                                        <label>Location</label> {{u.user.location.city}}, {{u.user.location.state}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				<li>
+                    <div class="collapsible-header blue white-text">
+                        <h5 class="header">Project 3: <small>Classic Arcade Game Clone</small></h5>
+                    </div>
+                    <div class="collapsible-body blue lighten-3">
+                        <div class="m12 col">
+                            <div class="card">
+                                <div class="card-content row">
+                                    <div class="s12 l3 col">
+                                        <img src="img/sm/ben-sm.png" class="align-right list-image">
+                                    </div>
+                                    <div class="s12 l9 col">
+                                        <h4>Build a Portfolio Site</h4>
+                                        
+										<p>
+											For now this is just my template for the future projects I will be creating while completing my <a href="https://udacity.com" target="blank">Udacity</a> Nanodegree. This portfolio was built using the <a href="http://getbootstrap.com" target="blank">Bootstrap</a> framework and <a href="http://fontawesome.io" target="blank">Font Awesome</a>. I've added some additional customizations too! My main focus is on mobility. This page will be endlessly modified and updated as I learn more throughout this program. Please don't consider this a "finished" product at this point. Take a look at my <a href="#projects">projects</a> below.
+										</p>
+											<div class="card-action">
+												<ul class="social-network social-circle social-card">
+													<li><a href="https://github.com/bendroid/" target="_blank" class="z-depth-2 icoGithub" title="Github"><i class="fa fa-github"></i></a></li>
+												</ul>
+											</div><!-- ./card action -->
+                                        <label>Password</label> {{u.user.password}} <br>
+                                        <label>Phone</label> {{u.user.phone}} <br>
+                                        <label>Location</label> {{u.user.location.city}}, {{u.user.location.state}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				<li>
+                    <div class="collapsible-header blue white-text">
+                        <h5 class="header">Project 4: <small>Website Optimization</small></h5>
+                    </div>
+                    <div class="collapsible-body blue lighten-3">
+                        <div class="m12 col">
+                            <div class="card">
+                                <div class="card-content row">
+                                    <div class="s12 l3 col">
+                                        <img src="img/sm/ben-sm.png" class="align-right list-image">
+                                    </div>
+                                    <div class="s12 l9 col">
+                                        <h4>Build a Portfolio Site</h4>
+                                        
+										<p>
+											For now this is just my template for the future projects I will be creating while completing my <a href="https://udacity.com" target="blank">Udacity</a> Nanodegree. This portfolio was built using the <a href="http://getbootstrap.com" target="blank">Bootstrap</a> framework and <a href="http://fontawesome.io" target="blank">Font Awesome</a>. I've added some additional customizations too! My main focus is on mobility. This page will be endlessly modified and updated as I learn more throughout this program. Please don't consider this a "finished" product at this point. Take a look at my <a href="#projects">projects</a> below.
+										</p>
+											<div class="card-action">
+												<ul class="social-network social-circle social-card">
+													<li><a href="https://github.com/bendroid/" target="_blank" class="z-depth-2 icoGithub" title="Github"><i class="fa fa-github"></i></a></li>
+												</ul>
+											</div><!-- ./card action -->
+                                        <label>Password</label> {{u.user.password}} <br>
+                                        <label>Phone</label> {{u.user.phone}} <br>
+                                        <label>Location</label> {{u.user.location.city}}, {{u.user.location.state}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				<li>
+                    <div class="collapsible-header blue white-text">
+                        <h5 class="header">Project: 5 <small>Neighborhood Map Project</small></h5>
+                    </div>
+                    <div class="collapsible-body blue lighten-3">
+                        <div class="m12 col">
+                            <div class="card">
+                                <div class="card-content row">
+                                    <div class="s12 l3 col">
+                                        <img src="img/sm/ben-sm.png" class="align-right list-image">
+                                    </div>
+                                    <div class="s12 l9 col">
+                                        <h4>Build a Portfolio Site</h4>
+                                        
+										<p>
+											For now this is just my template for the future projects I will be creating while completing my <a href="https://udacity.com" target="blank">Udacity</a> Nanodegree. This portfolio was built using the <a href="http://getbootstrap.com" target="blank">Bootstrap</a> framework and <a href="http://fontawesome.io" target="blank">Font Awesome</a>. I've added some additional customizations too! My main focus is on mobility. This page will be endlessly modified and updated as I learn more throughout this program. Please don't consider this a "finished" product at this point. Take a look at my <a href="#projects">projects</a> below.
+										</p>
+											<div class="card-action">
+												<ul class="social-network social-circle social-card">
+													<li><a href="https://github.com/bendroid/" target="_blank" class="z-depth-2 icoGithub" title="Github"><i class="fa fa-github"></i></a></li>
+												</ul>
+											</div><!-- ./card action -->
+                                        <label>Password</label> {{u.user.password}} <br>
+                                        <label>Phone</label> {{u.user.phone}} <br>
+                                        <label>Location</label> {{u.user.location.city}}, {{u.user.location.state}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				<li>
+                    <div class="collapsible-header blue white-text">
+                        <h5 class="header">Project 6: <small>Feed Reader Testing</small></h5>
+                    </div>
+                    <div class="collapsible-body blue lighten-3">
+                        <div class="m12 col">
+                            <div class="card">
+                                <div class="card-content row">
+                                    <div class="s12 l3 col">
+                                        <img src="img/sm/ben-sm.png" class="align-right list-image">
+                                    </div>
+                                    <div class="s12 l9 col">
+                                        <h4>Build a Portfolio Site</h4>
+                                        
+										<p>
+											For now this is just my template for the future projects I will be creating while completing my <a href="https://udacity.com" target="blank">Udacity</a> Nanodegree. This portfolio was built using the <a href="http://getbootstrap.com" target="blank">Bootstrap</a> framework and <a href="http://fontawesome.io" target="blank">Font Awesome</a>. I've added some additional customizations too! My main focus is on mobility. This page will be endlessly modified and updated as I learn more throughout this program. Please don't consider this a "finished" product at this point. Take a look at my <a href="#projects">projects</a> below.
+										</p>
+											<div class="card-action">
+												<ul class="social-network social-circle social-card">
+													<li><a href="https://github.com/bendroid/" target="_blank" class="z-depth-2 icoGithub" title="Github"><i class="fa fa-github"></i></a></li>
+												</ul>
+											</div><!-- ./card action -->
                                         <label>Password</label> {{u.user.password}} <br>
                                         <label>Phone</label> {{u.user.phone}} <br>
                                         <label>Location</label> {{u.user.location.city}}, {{u.user.location.state}}
@@ -51,6 +217,10 @@
     </div>
 
 </div>
+</div>
+
+
+
 
 <!-- =========== SCRIPTS =========== -->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

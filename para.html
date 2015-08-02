@@ -10,6 +10,7 @@
   <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/para.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/cards.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/social.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/spin.css" type="text/css" rel="stylesheet" >
@@ -131,14 +132,198 @@
   </div>
   </div>
 </div>
-
-
 <div id="projects" class="project section white">
   <div class="row container">
+<ul class="collapsible collapsible-accordion" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header blue white-text">
+                        <h5 class="header">Project 1: <small>Build a Portfolio Site</small></h5>
+                    </div>
+                    <div class="collapsible-body blue lighten-3">
+                        <div class="m12 col">
+                            <div class="card">
+                                <div class="card-content row">
+                                    <div class="s12 l3 col">
+                                        <img src="img/sm/ben-sm.png" class="align-right circle">
+                                    </div>
+                                    <div class="s12 l9 col">
+                                        <h4>Build a Portfolio Site</h4>
+                                        <label>Email</label> {{u.user.email}} <br>
+                                        <label>Password</label> {{u.user.password}} <br>
+                                        <label>Phone</label> {{u.user.phone}} <br>
+                                        <label>Location</label> {{u.user.location.city}}, {{u.user.location.state}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				<li>
+                    <div class="collapsible-header blue white-text">
+                        <h5 class="header">Project 2: <small>Online Resume</small></h5>
+                    </div>
+                    <div class="collapsible-body blue lighten-3">
+                        <div class="m12 col">
+                            <div class="card">
+                                <div class="card-content row">
+                                    <div class="s12 l3 col">
+                                        <img src="img/sm/ben-sm.png" class="align-right circle">
+                                    </div>
+                                    <div class="s12 l9 col">
+                                        <h4>Online Resume</h4>
+                                        <label>Email</label> {{u.user.email}} <br>
+                                        <label>Password</label> {{u.user.password}} <br>
+                                        <label>Phone</label> {{u.user.phone}} <br>
+                                        <label>Location</label> {{u.user.location.city}}, {{u.user.location.state}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+		</div>
+	</div>
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col s11 m2 l1">
+			<ul class="collapsible collapsible-accordion" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header blue white-text">
+                        <h5 class="header">Project 1: <small>Build a Portfolio Site</small></h5>
+                    </div>
+                    <div class="collapsible-body blue lighten-3">
+                        <div class="m12 col">
+                            <div class="card">
+                                <div class="card-content row">
+                                    <div class="s12 l3 col">
+                                        <img src="img/sliver.jpg" class="align-right list-image">
+                                    </div>
+                                    <div class="s12 l9 col">
+                                        <h4>Build a Portfolio Site</h4>
+                                        
+										<p>
+											For now this is just my template for the future projects I will be creating while completing my <a href="https://udacity.com" target="blank">Udacity</a> Nanodegree. This portfolio was built using the <a href="http://getbootstrap.com" target="blank">Bootstrap</a> framework and <a href="http://fontawesome.io" target="blank">Font Awesome</a>. I've added some additional customizations too! My main focus is on mobility. This page will be endlessly modified and updated as I learn more throughout this program. Please don't consider this a "finished" product at this point. Take a look at my <a href="#projects">projects</a> below.
+										</p>
+											<div class="card-action">
+												<ul class="social-network social-circle social-card">
+													<li><a href="https://github.com/bendroid/" target="_blank" class="z-depth-2 icoGithub" title="Github"><i class="fa fa-github"></i></a></li>
+												</ul>
+											</div><!-- ./card action -->
+                                        <label>Password</label> {{u.user.password}} <br>
+                                        <label>Phone</label> {{u.user.phone}} <br>
+                                        <label>Location</label> {{u.user.location.city}}, {{u.user.location.state}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				<li>
+                    <div class="collapsible-header blue white-text">
+                        <h5 class="header">Project 2: <small>Online Resume</small></h5>
+                    </div>
+                    <div class="collapsible-body blue lighten-3">
+                        <div class="m12 col">
+                            <div class="card">
+                                <div class="card-content row">
+                                    <div class="s12 l3 col">
+                                        <img src="img/sm/ben-sm.png" class="align-right list-image">
+                                    </div>
+                                    <div class="s12 l9 col">
+                                        <h4>Build a Portfolio Site</h4>
+                                        
+										<p>
+											For now this is just my template for the future projects I will be creating while completing my <a href="https://udacity.com" target="blank">Udacity</a> Nanodegree. This portfolio was built using the <a href="http://getbootstrap.com" target="blank">Bootstrap</a> framework and <a href="http://fontawesome.io" target="blank">Font Awesome</a>. I've added some additional customizations too! My main focus is on mobility. This page will be endlessly modified and updated as I learn more throughout this program. Please don't consider this a "finished" product at this point. Take a look at my <a href="#projects">projects</a> below.
+										</p>
+											<div class="card-action">
+												<ul class="social-network social-circle social-card">
+													<li><a href="https://github.com/bendroid/" target="_blank" class="z-depth-2 icoGithub" title="Github"><i class="fa fa-github"></i></a></li>
+												</ul>
+											</div><!-- ./card action -->
+                                        <label>Password</label> {{u.user.password}} <br>
+                                        <label>Phone</label> {{u.user.phone}} <br>
+                                        <label>Location</label> {{u.user.location.city}}, {{u.user.location.state}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+		</div>
+	<div class="col s12 m1 l1">
+            <ul class="collapsible">
+              <li class="active">
+                <a href="#projects" class="collapsible-header"><i class="mdi-av-web"></i></a>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="mdi-editor-format-align-justify"></i>Developer</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="mdi-av-play-shopping-bag"></i>Video Editor</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="mdi-editor-insert-comment"></i>Support Asst.</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+            </ul>
+          </div>
+          </div>
+          </div>
+		  
+<div class="container-fluid">
+<div class="row">
+<div class="col s12 m1 l1">
+<ul class="collection">
+    <li class="collection-item avatar">
+      <i class="mdi-av-web"></i>
+      <span class="title">Title</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#projects" class="secondary-content"><i class="material-icons">web</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle">folder</i>
+      <span class="title">Title</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle green">insert_chart</i>
+      <span class="title">Title</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle red">play_arrow</i>
+      <span class="title">Title</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+  </ul>
+</div>
+</div>
+</div>
+
+<div id="projects" class="project section white">
+  <div class="container">
     <h2 class="header center">Projects</h2>
     <p class="grey-text text-darken-3 lighten-3 flow-text">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
       <div class="row">
-        <div class="col s12 m4">
+        <div class="col s12 m4 l4">
           <div class="card hoverable">
             <div class="card-image">
               <img src="img/sm/ben-sm.jpg" srcset="img/md/ben-sm.jpg 1000w, img/ben-sm.jpg 2000w" alt="ben">
@@ -155,7 +340,7 @@
             </div><!-- ./card action -->
           </div><!-- ./card -->
         </div><!-- ./col -->
-        <div class="col s12 m4">
+        <div class="col s12 m4 l4">
           <div class="card hoverable">
             <div class="card-image">
               <img src="img/sm/ben-sm.jpg" srcset="img/md/ben-sm.jpg 1000w, img/ben-sm.jpg 2000w" alt="ben">
@@ -172,7 +357,7 @@
           </div><!-- ./card action -->
         </div><!-- ./card -->
       </div><!-- ./col -->
-      <div class="col s12 m4">
+      <div class="col s12 m4 l4">
         <div class="card hoverable">
           <div class="card-image">
             <img src="img/sm/ben-sm.jpg" srcset="img/md/ben-sm.jpg 1000w, img/ben-sm.jpg 2000w" alt="ben">
@@ -191,7 +376,7 @@
       </div><!-- ./col -->
     </div><!-- ./row -->
     <div class="row">
-        <div class="col s12 m4">
+        <div class="col s12 m4 l4">
           <div class="card hoverable">
             <div class="card-image">
               <img src="img/sm/ben-sm.jpg" srcset="img/md/ben-sm.jpg 1000w, img/ben-sm.jpg 2000w" alt="ben">
@@ -208,7 +393,7 @@
             </div><!-- ./card action -->
           </div><!-- ./card -->
         </div><!-- ./col -->
-        <div class="col s12 m4">
+        <div class="col s12 m4 l4">
           <div class="card hoverable">
             <div class="card-image">
               <img src="img/sm/ben-sm.jpg" srcset="img/md/ben-sm.jpg 1000w, img/ben-sm.jpg 2000w" alt="ben">
@@ -225,7 +410,7 @@
           </div><!-- ./card action -->
         </div><!-- ./card -->
       </div><!-- ./col -->
-      <div class="col s12 m4">
+      <div class="col s12 m4 l4">
         <div class="card hoverable">
           <div class="card-image">
             <img src="img/sm/ben-sm.jpg" srcset="img/md/ben-sm.jpg 1000w, img/ben-sm.jpg 2000w" alt="ben">
@@ -263,6 +448,7 @@
 </div>
 -->
 
+<!--
 <div class="col hide-on-small-only m3 l2">
       <div class="toc-wrapper pinned">
         <div style="height: 250px;">
@@ -274,7 +460,7 @@
         </div>
       </div>
 </div>
-        
+-->
 <!-- ========= FOOTER ============= -->
 
 <footer class="page-footer orange">
