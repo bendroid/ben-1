@@ -1,0 +1,20 @@
+.col.s1,
+.col.s2 {
+	border: 2px solid #55acee !Important;
+}
+
+.container {
+	border: 2px solid #000 !Important;
+}
+
+.container-fluid {
+	border: 2px solid #18bd55 !Important;
+}
+
+.row {
+	border: 4px solid #bd3518 !Important;
+}
+
+section {
+	border: 6px solid #2617DC !Important;
+}
