@@ -9,27 +9,13 @@
 <!-- CSS  -->
 <link rel="stylesheet" href="css/materialize.min.css"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="css/style.css"/>
-<link rel="stylesheet" href="css/test.css"/>
-<!-- <link rel="stylesheet" href="css/main.css"/> -->
+<link rel="stylesheet" href="css/main-1.css"/>
 <link rel="stylesheet" href="css/social.css"/>
 <link rel="stylesheet" href="css/spin.css" >
 <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body>
 <!-- ======== NAVBAR ======= -->
-<!-- DROPDOWN -->
-<ul id="dropdownProjects" class="dropdown-content">
-<li><a href="#!">Project 1</a></li>
-<li><a href="#!">Project 2</a></li>
-<li><a href="#!">Project 3</a></li>
-<li><a href="#!">Project 4</a></li>
-<li><a href="#!">Project 5</a></li>
-<li><a href="#!">Project 6</a></li>
-<li><a href="#!">Project 7</a></li>
-<li class="divider"></li>
-<li><a href="#!">Divided</a></li>
-</ul>
 <div class="navbar-fixed">
 <nav class="light-blue">
 <div class="nav-wrapper container">
@@ -37,6 +23,18 @@
 <ul class="right hide-on-med-and-down">
 <li><a href="#">Navbar</a></li>
 <li><a class="dropdown-button" href="#!" data-activates="dropdownProjects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
+</ul>
+<!-- DROPDOWN -->
+<ul id="dropdownProjects" class="dropdown-content light-blue">
+<li><a class="white-text" href="#!">Project 1</a></li>
+<li><a class="white-text" href="#!">Project 2</a></li>
+<li><a class="white-text" href="#!">Project 3</a></li>
+<li><a class="white-text" href="#!">Project 4</a></li>
+<li><a class="white-text" href="#!">Project 5</a></li>
+<li><a class="white-text" href="#!">Project 6</a></li>
+<li><a class="white-text" href="#!">Project 7</a></li>
+<li class="divider"></li>
+<li><a class="white-text" href="#!">Divided</a></li>
 </ul>
 <ul class="right hide-on-med-and-down">
 <li><a href="https://github.com/bendroid/" target="_blank" class="btn btn-social btn-github"><i class="fa fa-github"></i></a></li>
@@ -46,16 +44,16 @@
 </ul>
 
 <!-- ========= MOBILE NAVBAR ========== -->
-<ul id="nav-mobile" class="side-nav">
-<li><a href="#!">Project 1</a></li>
-<li><a href="#!">Project 2</a></li>
-<li><a href="#!">Project 3</a></li>
-<li><a href="#!">Project 4</a></li>
-<li><a href="#!">Project 5</a></li>
-<li><a href="#!">Project 6</a></li>
-<li><a href="#!">Project 7</a></li>
+<ul id="nav-mobile" class="side-nav light-blue">
+<li><a class="white-text" href="#!">Project 1</a></li>
+<li><a class="white-text" href="#!">Project 2</a></li>
+<li><a class="white-text" href="#!">Project 3</a></li>
+<li><a class="white-text" href="#!">Project 4</a></li>
+<li><a class="white-text" href="#!">Project 5</a></li>
+<li><a class="white-text" href="#!">Project 6</a></li>
+<li><a class="white-text" href="#!">Project 7</a></li>
 <li class="divider"></li>
-<li><a href="#!">Divided</a></li>
+<li><a class="white-text" href="#!">Divided</a></li>
 </ul>
 <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 </div>
@@ -68,8 +66,30 @@
 <header id="projects">
 <div class="row">
 <h1 class="center">Ben Collins</h1>
+<div class="col s12 m10 offset-m1 l10 offset-l1">
+<p class="flow-text">This is my Portfolio. It was created using the <a href="http://materializecss.com/">Materialize CSS</a> framework and <a href="http://fontawesome.io/">Font Awesome</a>. I will be modifying this portfolio page to add content as I progress through my <a href="https://www.udacity.com/">Udacity Nanodegree</a>. Thank you for your visit!</p>
+</div><!-- ./col -->
 </div><!-- ./row -->
 </header>
+
+<!-- ============= THIN CARD ============== -->
+<div class="row">
+<div class="col s12 m8 offset-m2 l6 offset-l3">
+<div class="card-panel grey lighten-5 z-depth-1">
+<div class="row valign-wrapper">
+<div class="col s2">
+<img src="images/yuna.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+</div>
+<div class="col s10">
+<span class="black-text">
+This is a square image. Add the "circle" class to it to make it appear circular.
+</span>
+</div>
+</div>
+</div>
+</div>
+</div><!-- ./row -->
+
 
 <div class="container">
 <!-- ============= ROW 1 ============= -->
@@ -78,7 +98,7 @@
 <div class="col s12 m4 l4">
 <div class="card">
 <div class="card-image">
-<img class="img-responsive" src="portrait-small.jpg" srcset="portrait-small.jpg 1x, portrait-large.jpg 2x, portrait-cropped-sm.jpg 640w" alt="ben">
+<img class="responsive-img" src="img/ben-sm.jpg" srcset="img/ben-lg.jpg 1400w, img/ben-md.jpg 700w, img/ben-sm.jpg 400w" sizes="(min-width: 700px) 700px, 100vw" alt="Ben">
 <span class="card-title">Card Title</span>
 </div>
 <div class="card-content">
@@ -211,5 +231,5 @@ Made by <a class="orange-text text-lighten-3" href="#!">Ben Collins</a>
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
 
-</body><!-- ./container-fluid -->
+</body>
 </html>
